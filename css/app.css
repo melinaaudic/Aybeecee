@@ -1,6 +1,26 @@
-/* PLUGINS */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,300i,500,500i);
+@import url("https://fonts.googleapis.com/css?family=Oswald");
 /* BASE STYLES */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px; }
+
+.container {
+  width: 100%;
+  position: relative; }
+  .container > * {
+    width: 1200px;
+    margin: 0 auto; }
+
+h1 {
+  color: #ff3d46;
+  font-family: "Oswald", sans-serif;
+  font-size: 50px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center; }
+
 /* LAYOUTS */
-/* MODULES */
 
 /*# sourceMappingURL=app.css.map */
