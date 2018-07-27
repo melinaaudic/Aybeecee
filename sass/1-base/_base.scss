@@ -12,6 +12,12 @@ body {
     margin: 0 auto;
   }
 }
+.background{
+  background-color: $base-colour
+}
+.background-light-color{
+  background-color: $content-colour-light
+}
 
 // TITRE
 h1 {

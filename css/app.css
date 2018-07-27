@@ -13,6 +13,12 @@ body {
     width: 1200px;
     margin: 0 auto; }
 
+.background {
+  background-color: #ff3d46; }
+
+.background-light-color {
+  background-color: #f2f2f2; }
+
 h1 {
   color: #ff3d46;
   font-family: "Oswald", sans-serif;
@@ -22,5 +28,16 @@ h1 {
   text-align: center; }
 
 /* LAYOUTS */
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px; }
+  nav ul li {
+    font-family: "Oswald", sans-serif;
+    font-size: 23px;
+    text-transform: uppercase; }
+  nav ul a {
+    text-decoration: none;
+    color: #ffffff; }
 
 /*# sourceMappingURL=app.css.map */
