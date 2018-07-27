@@ -1,0 +1,38 @@
+#temoignages {
+  .wrapper {
+    display: flex;
+    align-items: flex-end;
+    > div {
+      margin-right: $normal-space;
+      padding: $normal-space $normal-space $null $normal-space;
+      background-color: $content-colour-white;
+      width: 100%;
+      height: 100%;
+      font-size: 13px;
+      &:last-child {
+        margin-right: $null;
+      }
+      > p {
+        font-style: italic;
+        margin-bottom: $normal-space;
+        strong {
+          font-weight: $bold;
+        }
+      }
+      .entreprise {
+        text-transform: uppercase;
+        font-weight: $bold;
+      }
+      .interlocuteur {
+        font-weight: $bold;
+      }
+      .titre-interlocuteur {
+        font-style: italic;
+        margin-bottom: $normal-space
+      }
+      &:after {
+        @include triangle(35px, $content-colour-white);
+      }
+    }
+  }
+}

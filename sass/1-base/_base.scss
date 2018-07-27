@@ -2,21 +2,52 @@ body {
   font-family: $montserrat;
   font-weight: $light;
   font-size: 16px;
+  margin: 0 auto;
+  color: $content-colour-dark;
 }
 
-.container {
-  width: 100%;
-  position: relative;
+
+// Gestion des fonds
+%padding-section {
+  padding: 50px 0;
+}
+
+%background-base-color {
+  background-color: $base-colour;
+  //  @extend %padding-section;
+}
+
+%background-light-color {
+  background-color: $content-colour-light;
+}
+
+%width-container {
+  width: 1200px;
+  margin: 0 auto;
+  @extend %padding-section;
+}
+
+.background-color {
+  @extend %background-base-color;
   > * {
-    width: 1200px;
-    margin: 0 auto;
+    @extend %width-container;
+  }
+  h1{
+    color: $content-colour-white;
   }
 }
-.background{
-  background-color: $base-colour
+
+.background-light-color {
+  @extend %background-light-color;
+  > * {
+    @extend %width-container;
+  }
 }
-.background-light-color{
-  background-color: $content-colour-light
+
+.no-background {
+  @extend %width-container;
+  @extend %padding-section;
+
 }
 
 // TITRE
@@ -27,10 +58,20 @@ h1 {
   letter-spacing: 3px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 50px;
 }
 
-h2 {}
+h2 {
+  font-weight: $bold;
+  font-size: 25px;
+}
 
 h3 {}
 
 p {}
+
+// IMAGE
+img{
+  width: 100%;
+}
+

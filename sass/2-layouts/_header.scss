@@ -1,17 +1,23 @@
-nav {
+.logo {
+  text-align: center;
+}
 
+.nav {
+  padding-top: 0;
+  padding-bottom: 10px;
   ul {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 10px;
-    li {
-      font-family: $oswald;
-      font-size: 23px;
-      text-transform: uppercase;
-    }
-    a {
+    font-family: $oswald;
+    font-size: 23px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    a{
       text-decoration: none;
       color: $content-colour-white;
+      &:hover{
+        color: $content-colour-dark;
+      }
     }
   }
 }
