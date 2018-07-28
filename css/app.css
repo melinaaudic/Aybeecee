@@ -12,30 +12,35 @@ body {
   margin: 0 auto;
   color: #4a4a4a; }
 
-.background-color .logo,
-.background-color nav,
-.background-color #market-place,
-.background-color #temoignages,
-.background-color #contact,
-.background-color footer, .background-light-color #aybeecee-pour-qui, .no-background {
+.background .logo,
+.background #qui-sommes-nous,
+.background #market-place,
+.background hr,
+.background #que-fait-aybeecee,
+.background #aybeecee-pour-qui,
+.background #contact {
   padding: 50px 0; }
 
-.background-color .logo,
-.background-color nav,
-.background-color #market-place,
-.background-color #temoignages,
-.background-color #contact,
-.background-color footer, .background-light-color #aybeecee-pour-qui, .no-background {
+.background.base-color {
+  background-color: #ff3d46; }
+  .background.base-color h1 {
+    color: #ffffff; }
+.background.light-color {
+  background-color: #f2f2f2; }
+.background .logo,
+.background nav,
+.background #qui-sommes-nous,
+.background #market-place,
+.background hr,
+.background #temoignages,
+.background #que-fait-aybeecee,
+.background #aybeecee-pour-qui,
+.background #contact,
+.background footer {
   width: 1200px;
   margin: 0 auto; }
-
-.background-color {
-  background-color: #ff3d46; }
-  .background-color h1 {
-    color: #ffffff; }
-
-.background-light-color {
-  background-color: #f2f2f2; }
+.background #temoignages {
+  padding-top: 50px; }
 
 h1 {
   color: #ff3d46;
@@ -56,6 +61,17 @@ p {
 
 img {
   width: 100%; }
+
+hr {
+  border: 0; }
+  hr:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-image: url(../medias/icon/dot.svg);
+    background-repeat: repeat-x;
+    color: #ffffff; }
 
 /* LAYOUTS */
 .logo {
