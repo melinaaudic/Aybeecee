@@ -6,12 +6,12 @@
 }
 
 // TRIANGLE + OMBRE
-@mixin arrow-shadow ($width, $size, $shift, $colour-shadow, $color) {
+@mixin arrow-shadow ($width, $size, $shift, $color-shadow, $color, $distance) {
   width: $width;
   height: $size;
   position: relative;
   overflow: hidden;
-  left: 30%;
+  left: $distance;
   &:after {
     content: "";
     position: absolute;
@@ -20,7 +20,7 @@
     background: $color;
     transform: rotate(45deg);
     top: $shift;
-    @include shadow($colour-shadow)
+    @include shadow($color-shadow)
   }
 }
 
@@ -29,4 +29,23 @@
   width: -webkit-calc(#{$percent} - #{$pixel});
   width: -moz-calc(#{$percent} - #{$pixel});
   width: calc(#{$percent} - #{$pixel});
+}
+
+// COLUMNS
+@mixin column ($nbr, $gap, $divide) {
+  -webkit-column-count: $nbr;
+  -moz-column-count: $nbr;
+  column-count: $nbr;
+  -webkit-column-gap: $gap;
+  -moz-column-gap: $gap;
+  column-gap: $gap;
+  -webkit-column-rule: $divide;
+  -moz-column-rule: $divide;
+  column-rule: $divide;
+}
+
+@mixin break {
+  break-inside: avoid-column;
+  page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
 }

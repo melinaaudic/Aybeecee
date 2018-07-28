@@ -22,11 +22,19 @@ body {
   padding: 50px 0; }
 
 .background.base-color {
-  background-color: #ff3d46; }
+  background-color: #ff3d46;
+  color: #ffffff; }
   .background.base-color h1 {
     color: #ffffff; }
 .background.light-color {
-  background-color: #f2f2f2; }
+  background-color: #f2f2f2;
+  color: #4a4a4a; }
+.background.dark-color {
+  background-color: #4a4a4a;
+  color: #ffffff; }
+.background.white-color {
+  background-color: #ffffff;
+  color: #4a4a4a; }
 .background .logo,
 .background nav,
 .background #qui-sommes-nous,
@@ -36,11 +44,30 @@ body {
 .background #que-fait-aybeecee,
 .background #aybeecee-pour-qui,
 .background #contact,
-.background footer {
+.background footer,
+.background .wrapper {
   width: 1200px;
   margin: 0 auto; }
 .background #temoignages {
   padding-top: 50px; }
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .wrapper .inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-right: 20px; }
+    .wrapper .inner .content {
+      padding: 20px;
+      -webkit-box-shadow: 4px 4px 10px -2px rgba(74, 74, 74, 0.25);
+      -moz-box-shadow: 4px 4px 10px -2px rgba(74, 74, 74, 0.25);
+      box-shadow: 4px 4px 10px -2px rgba(74, 74, 74, 0.25); }
+      .wrapper .inner .content.image {
+        padding: 0; }
 
 h1 {
   color: #ff3d46;
@@ -55,9 +82,23 @@ h2 {
   font-weight: 500;
   font-size: 25px; }
 
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 23px;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 20px; }
+
 p {
+  font-size: 15px;
   line-height: normal;
   font-weight: 300; }
+
+strong {
+  font-weight: 500; }
+
+a {
+  text-decoration: none; }
 
 img {
   width: 100%; }
@@ -106,97 +147,135 @@ hr {
     #qui-sommes-nous p:last-child {
       margin-bottom: 0; }
 
-#temoignages {
-  padding-bottom: 0; }
-  #temoignages .wrapper {
-    display: flex;
-    align-items: flex-end; }
-    #temoignages .wrapper .inner {
-      margin-right: 20px;
-      width: 100%;
-      height: 100%;
-      font-size: 13px; }
-      #temoignages .wrapper .inner:last-child {
-        margin-right: 0; }
-      #temoignages .wrapper .inner .content {
-        background-color: #ffffff;
-        -webkit-box-shadow: 4px 4px 10px -2px rgba(74, 74, 74, 0.25);
-        -moz-box-shadow: 4px 4px 10px -2px rgba(74, 74, 74, 0.25);
-        box-shadow: 4px 4px 10px -2px rgba(74, 74, 74, 0.25);
-        padding: 20px; }
-        #temoignages .wrapper .inner .content p {
-          font-style: italic;
-          margin-bottom: 20px; }
-          #temoignages .wrapper .inner .content p strong {
-            font-weight: 500; }
-        #temoignages .wrapper .inner .content .entreprise {
-          text-transform: uppercase;
-          font-weight: 500;
-          margin-bottom: 0;
-          font-style: normal; }
-        #temoignages .wrapper .inner .content .interlocuteur {
-          font-weight: 500;
-          font-style: normal;
-          margin-bottom: 0; }
-    #temoignages .wrapper .arrow {
+#temoignages .wrapper {
+  align-items: flex-end; }
+  #temoignages .wrapper .inner {
+    width: -webkit-calc(16.66667% - 20px);
+    width: -moz-calc(16.66667% - 20px);
+    width: calc(16.66667% - 20px);
+    height: 100%;
+    font-size: 13px; }
+    #temoignages .wrapper .inner:last-child {
+      margin-right: 0; }
+    #temoignages .wrapper .inner .content p {
+      font-size: 13px;
+      font-style: italic;
+      margin-bottom: 20px; }
+    #temoignages .wrapper .inner .content .entreprise {
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-bottom: 0;
+      font-style: normal; }
+    #temoignages .wrapper .inner .content .interlocuteur {
+      font-weight: 500;
+      font-style: normal;
+      margin-bottom: 0; }
+  #temoignages .wrapper .arrow {
+    width: 75px;
+    height: 35px;
+    position: relative;
+    overflow: hidden;
+    left: 30%; }
+    #temoignages .wrapper .arrow:after {
+      content: "";
+      position: absolute;
       width: 75px;
-      height: 35px;
-      position: relative;
-      overflow: hidden;
-      left: 30%; }
-      #temoignages .wrapper .arrow:after {
-        content: "";
-        position: absolute;
-        width: 75px;
-        height: 75px;
-        background: #ffffff;
-        transform: rotate(45deg);
-        top: -60px;
-        -webkit-box-shadow: 4px 4px 10px -2px rgba(74, 74, 74, 0.25);
-        -moz-box-shadow: 4px 4px 10px -2px rgba(74, 74, 74, 0.25);
-        box-shadow: 4px 4px 10px -2px rgba(74, 74, 74, 0.25); }
-    #temoignages .wrapper .man:after {
-      background-image: url(../medias/icon/man.svg);
-      background-repeat: no-repeat;
-      display: block;
-      margin-top: 50px;
-      width: 108px;
-      height: 151px;
-      left: 21%; }
+      height: 75px;
+      background: #ffffff;
+      transform: rotate(45deg);
+      top: -60px;
+      -webkit-box-shadow: 4px 4px 10px -2px rgba(74, 74, 74, 0.25);
+      -moz-box-shadow: 4px 4px 10px -2px rgba(74, 74, 74, 0.25);
+      box-shadow: 4px 4px 10px -2px rgba(74, 74, 74, 0.25); }
+  #temoignages .wrapper .man:after {
+    background-image: url(../medias/icon/man.svg);
+    background-repeat: no-repeat;
+    display: block;
+    margin-top: 50px;
+    width: 108px;
+    height: 151px;
+    left: 21%; }
 
-#que-fait-aybeecee .wrapper {
-  display: flex;
-  flex-wrap: wrap; }
-  #que-fait-aybeecee .wrapper .background {
-    width: -webkit-calc(25% - 20px);
-    width: -moz-calc(25% - 20px);
-    width: calc(25% - 20px);
+#que-fait-aybeecee .wrapper .inner {
+  width: -webkit-calc(25% - 20px);
+  width: -moz-calc(25% - 20px);
+  width: calc(25% - 20px); }
+  #que-fait-aybeecee .wrapper .inner .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-sizing: border-box;
-    margin-right: 20px;
     margin-bottom: 20px;
-    color: #ffffff;
     text-align: center;
     max-height: 280px; }
-    #que-fait-aybeecee .wrapper .background:nth-child(4n + 4) {
-      margin-right: 0; }
-    #que-fait-aybeecee .wrapper .background.base-colour {
-      padding: 20px;
-      background-color: #ff3d46; }
-    #que-fait-aybeecee .wrapper .background.dark-colour {
-      padding: 20px;
-      background-color: #4a4a4a; }
-    #que-fait-aybeecee .wrapper .background img {
+    #que-fait-aybeecee .wrapper .inner .content .svg {
       margin-bottom: 20px; }
-    #que-fait-aybeecee .wrapper .background.image img {
-      margin-bottom: 0; }
-    #que-fait-aybeecee .wrapper .background .intitule {
+  #que-fait-aybeecee .wrapper .inner .intitule {
+    text-transform: uppercase;
+    font-weight: 500; }
+  #que-fait-aybeecee .wrapper .inner .baseline {
+    text-align: left;
+    font-size: 40px; }
+  #que-fait-aybeecee .wrapper .inner:nth-child(4n + 4) {
+    margin-right: 0; }
+
+#aybeecee-pour-qui .wrapper .inner {
+  width: -webkit-calc(16.66667% - 20px);
+  width: -moz-calc(16.66667% - 20px);
+  width: calc(16.66667% - 20px); }
+  #aybeecee-pour-qui .wrapper .inner .content {
+    max-height: 607px;
+    text-align: center; }
+    #aybeecee-pour-qui .wrapper .inner .content h3 a {
+      color: #ffffff; }
+    #aybeecee-pour-qui .wrapper .inner .content .svg {
+      max-height: 100px;
+      margin-bottom: 20px; }
+  #aybeecee-pour-qui .wrapper .inner:last-child {
+    margin-right: 0; }
+
+.rubrique h2 {
+  padding: 20px 0;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-size: 40px; }
+.rubrique .arrow {
+  width: 75px;
+  height: 35px;
+  position: relative;
+  overflow: hidden;
+  left: 47%; }
+  .rubrique .arrow:after {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background: #ff3d46;
+    transform: rotate(45deg);
+    top: -60px;
+    -webkit-box-shadow: 4px 4px 10px -2px rgba(74, 74, 74, 0.25);
+    -moz-box-shadow: 4px 4px 10px -2px rgba(74, 74, 74, 0.25);
+    box-shadow: 4px 4px 10px -2px rgba(74, 74, 74, 0.25); }
+.rubrique .wrapper .inner .content {
+  box-shadow: none;
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+  -webkit-column-gap: 50px;
+  -moz-column-gap: 50px;
+  column-gap: 50px;
+  -webkit-column-rule: 3px dotted #ff3d46;
+  -moz-column-rule: 3px dotted #ff3d46;
+  column-rule: 3px dotted #ff3d46; }
+  .rubrique .wrapper .inner .content .intro {
+    font-size: 20px; }
+    .rubrique .wrapper .inner .content .intro span {
+      color: #ff3d46;
       text-transform: uppercase;
       font-weight: 500; }
-    #que-fait-aybeecee .wrapper .background .baseline {
-      text-align: left;
-      font-size: 40px; }
+  .rubrique .wrapper .inner .content p {
+    break-inside: avoid-column;
+    page-break-inside: avoid;
+    -webkit-column-break-inside: avoid; }
 
 /*# sourceMappingURL=app.css.map */

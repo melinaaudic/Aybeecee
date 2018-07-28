@@ -1,0 +1,57 @@
+#aybeecee-pour-qui {
+  .wrapper {
+    .inner {
+      @include calc(100%/6, $normal-space);
+      .content {
+        max-height: 607px;
+        text-align: center;
+        h3 {
+          a {
+            color: $content-color-white;
+          }
+        }
+        .svg {
+          max-height: 100px;
+          margin-bottom: $normal-space;
+        }
+      }
+
+      &:last-child {
+        margin-right: $null;
+      }
+    }
+  }
+}
+
+.rubrique {
+  h2 {
+    padding: $normal-space $null;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: $oswald;
+    font-size: 40px;
+  }
+  .arrow {
+    @include arrow-shadow(75px, 35px, -60px, $color-shadow, $base-color, 47%)
+  }
+  .wrapper {
+    .inner {
+      .content {
+        box-shadow: none;
+        @include column(4, $large-space, 3px dotted $base-color);
+        .intro {
+          font-size: 20px;
+          span {
+            color: $base-color;
+            text-transform: uppercase;
+            font-weight: $bold;
+          }
+        }
+        p {
+          @include break
+        }
+      }
+
+    }
+  }
+}

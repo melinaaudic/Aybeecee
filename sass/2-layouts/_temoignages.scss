@@ -1,26 +1,18 @@
 #temoignages {
-  padding-bottom: $null;
   .wrapper {
-    display: flex;
     align-items: flex-end;
     .inner {
-      margin-right: $normal-space;
-      width: 100%;
+      @include calc(100% / 6, $normal-space);
       height: 100%;
       font-size: 13px;
       &:last-child {
         margin-right: $null;
       }
       .content {
-        background-color: $content-colour-white;
-        @include shadow ($colour-shadow);
-        padding: $normal-space;
         p {
+          font-size: 13px;
           font-style: italic;
           margin-bottom: $normal-space;
-          strong {
-            font-weight: $bold;
-          }
         }
         .entreprise {
           text-transform: uppercase;
@@ -36,7 +28,7 @@
       }
     }
     .arrow {
-      @include arrow-shadow(75px, 35px, -60px, $colour-shadow, $content-colour-white)
+      @include arrow-shadow(75px, 35px, -60px, $color-shadow, $content-color-white, 30%)
     }
     .man {
       &:after {

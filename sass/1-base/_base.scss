@@ -3,25 +3,40 @@ body {
   font-weight: $light;
   font-size: 16px;
   margin: 0 auto;
-  color: $content-colour-dark;
+  color: $content-color-dark;
 }
-
 
 // Gestion des fonds
 %padding-section {
-  padding: 50px 0;
+  padding: $large-space $null;
 }
 
 .background {
   &.base-color {
-    background-color: $base-colour;
+    background-color: $base-color;
+    color: $content-color-white;
     h1 {
-      color: $content-colour-white;
+      color: $content-color-white;
     }
   }
   &.light-color {
-    background-color: $content-colour-light;
+    background-color: $content-color-light;
+    color: $content-color-dark;
   }
+  &.dark-color {
+    background-color: $content-color-dark;
+    color: $content-color-white;
+  }
+  &.white-color {
+    background-color: $content-color-white;
+    color: $content-color-dark;
+  }
+
+  %container-width {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
   .logo,
   nav,
   #qui-sommes-nous,
@@ -31,9 +46,9 @@ body {
   #que-fait-aybeecee,
   #aybeecee-pour-qui,
   #contact,
-  footer {
-    width: 1200px;
-    margin: 0 auto;
+  footer,
+  .wrapper{
+    @extend %container-width;
   }
   .logo,
   #qui-sommes-nous,
@@ -49,9 +64,31 @@ body {
   }
 }
 
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-right: $normal-space;
+    .content {
+      padding: $normal-space;
+      @include shadow ($color-shadow);
+      &.image {
+        padding: $null;
+      }
+    }
+  }
+}
+
+
 // TITRE
 h1 {
-  color: $base-colour;
+  color: $base-color;
   font-family: $oswald;
   font-size: 50px;
   letter-spacing: 3px;
@@ -65,11 +102,27 @@ h2 {
   font-size: 25px;
 }
 
-h3 {}
+h3 {
+  font-family: $oswald;
+  font-size: 23px;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: $normal-space;
+}
 
 p {
+  font-size: 15px;
+
   line-height: normal;
   font-weight: $light;
+}
+
+strong {
+  font-weight: $bold;
+}
+
+a {
+  text-decoration: none;
 }
 
 // IMAGE
@@ -86,6 +139,6 @@ hr {
     height: 4px;
     background-image: url(../medias/icon/dot.svg);
     background-repeat: repeat-x;
-    color: $content-colour-white;
+    color: $content-color-white;
   }
 }
