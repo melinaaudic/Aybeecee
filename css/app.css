@@ -12,10 +12,20 @@ body {
   margin: 0 auto;
   color: #4a4a4a; }
 
-.background-color > *, .background-light-color > *, .no-background {
+.background-color .logo,
+.background-color nav,
+.background-color #market-place,
+.background-color #temoignages,
+.background-color #contact,
+.background-color footer, .background-light-color #aybeecee-pour-qui, .no-background {
   padding: 50px 0; }
 
-.background-color > *, .background-light-color > *, .no-background {
+.background-color .logo,
+.background-color nav,
+.background-color #market-place,
+.background-color #temoignages,
+.background-color #contact,
+.background-color footer, .background-light-color #aybeecee-pour-qui, .no-background {
   width: 1200px;
   margin: 0 auto; }
 

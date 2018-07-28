@@ -20,17 +20,22 @@ body {
 
 .background-color {
   background-color: $base-colour;
-  > * {
+  .logo,
+  nav,
+  #market-place,
+  #temoignages,
+  #contact,
+  footer {
     @extend %width-container;
   }
-  h1{
+  h1 {
     color: $content-colour-white;
   }
 }
 
 .background-light-color {
   background-color: $content-colour-light;
-  > * {
+  #aybeecee-pour-qui {
     @extend %width-container;
   }
 }
@@ -62,7 +67,6 @@ h3 {}
 p {}
 
 // IMAGE
-img{
+img {
   width: 100%;
 }
-
