@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300,300i,500,500i);
 @import url("https://fonts.googleapis.com/css?family=Oswald");
+#temoignages .wrapper .man:after {
+  content: "";
+  position: relative; }
+
 /* BASE STYLES */
 body {
   font-family: "Montserrat", sans-serif;
@@ -11,18 +15,17 @@ body {
 .background-color > *, .background-light-color > *, .no-background {
   padding: 50px 0; }
 
-.background-color {
-  background-color: #ff3d46; }
-
-.background-light-color {
-  background-color: #f2f2f2; }
-
 .background-color > *, .background-light-color > *, .no-background {
   width: 1200px;
   margin: 0 auto; }
 
-.background-color h1 {
-  color: #ffffff; }
+.background-color {
+  background-color: #ff3d46; }
+  .background-color h1 {
+    color: #ffffff; }
+
+.background-light-color {
+  background-color: #f2f2f2; }
 
 h1 {
   color: #ff3d46;
@@ -74,38 +77,63 @@ img {
     #qui-sommes-nous p:last-child {
       margin-bottom: 0; }
 
-#temoignages .wrapper {
-  display: flex;
-  align-items: flex-end; }
-  #temoignages .wrapper > div {
-    margin-right: 20px;
-    padding: 20px 20px 0 20px;
-    background-color: #ffffff;
-    width: 100%;
-    height: 100%;
-    font-size: 13px; }
-    #temoignages .wrapper > div:last-child {
-      margin-right: 0; }
-    #temoignages .wrapper > div > p {
-      font-style: italic;
-      margin-bottom: 20px; }
-      #temoignages .wrapper > div > p strong {
-        font-weight: 500; }
-    #temoignages .wrapper > div .entreprise {
-      text-transform: uppercase;
-      font-weight: 500; }
-    #temoignages .wrapper > div .interlocuteur {
-      font-weight: 500; }
-    #temoignages .wrapper > div .titre-interlocuteur {
-      font-style: italic;
-      margin-bottom: 20px; }
-    #temoignages .wrapper > div:after {
-      content: "";
+#temoignages {
+  padding-bottom: 0; }
+  #temoignages .wrapper {
+    display: flex;
+    align-items: flex-end; }
+    #temoignages .wrapper .inner {
+      margin-right: 20px;
+      width: 100%;
+      height: 100%;
+      font-size: 13px; }
+      #temoignages .wrapper .inner:last-child {
+        margin-right: 0; }
+      #temoignages .wrapper .inner .content {
+        background-color: #ffffff;
+        -webkit-box-shadow: 4px 4px 10px -2px rgba(74, 74, 74, 0.25);
+        -moz-box-shadow: 4px 4px 10px -2px rgba(74, 74, 74, 0.25);
+        box-shadow: 4px 4px 10px -2px rgba(74, 74, 74, 0.25);
+        padding: 20px; }
+        #temoignages .wrapper .inner .content p {
+          font-style: italic;
+          margin-bottom: 20px;
+          line-height: 120%; }
+          #temoignages .wrapper .inner .content p strong {
+            font-weight: 500; }
+        #temoignages .wrapper .inner .content .entreprise {
+          text-transform: uppercase;
+          font-weight: 500;
+          margin-bottom: 0;
+          font-style: normal; }
+        #temoignages .wrapper .inner .content .interlocuteur {
+          font-weight: 500;
+          font-style: normal;
+          margin-bottom: 0; }
+    #temoignages .wrapper .arrow {
+      width: 75px;
+      height: 35px;
       position: relative;
-      border-left: 35px solid transparent;
-      border-right: 35px solid transparent;
-      border-top: 35px solid #ffffff;
-      top: 50px;
-      left: 23%; }
+      overflow: hidden;
+      left: 30%; }
+      #temoignages .wrapper .arrow:after {
+        content: "";
+        position: absolute;
+        width: 75px;
+        height: 75px;
+        background: #ffffff;
+        transform: rotate(45deg);
+        top: -60px;
+        -webkit-box-shadow: 4px 4px 10px -2px rgba(74, 74, 74, 0.25);
+        -moz-box-shadow: 4px 4px 10px -2px rgba(74, 74, 74, 0.25);
+        box-shadow: 4px 4px 10px -2px rgba(74, 74, 74, 0.25); }
+    #temoignages .wrapper .man:after {
+      background-image: url(../medias/icon/man.svg);
+      background-repeat: no-repeat;
+      display: block;
+      margin-top: 50px;
+      width: 108px;
+      height: 151px;
+      left: 21%; }
 
 /*# sourceMappingURL=app.css.map */

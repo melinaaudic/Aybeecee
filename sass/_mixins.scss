@@ -1,9 +1,33 @@
 @mixin triangle ($size, $color) {
-  content: "";
-  position: relative;
+  @extend %after-content;
   border-left: $size solid transparent;
   border-right: $size solid transparent;
   border-top: $size solid $color;
-  top: 50px;
-  left: 23%;
+  top: $size;
+  left: 29%;
+}
+
+@mixin shadow ($color) {
+  -webkit-box-shadow: 4px 4px 10px -2px $color;
+  -moz-box-shadow: 4px 4px 10px -2px $color;
+  box-shadow: 4px 4px 10px -2px $color;
+}
+
+
+@mixin arrow-shadow ($width, $size, $shift, $colour-shadow, $color){
+  width: $width;
+  height: $size;
+  position: relative;
+  overflow: hidden;
+  left: 30%;
+  &:after {
+    content: "";
+    position: absolute;
+    width: $width;
+    height: $width;
+    background: $color;
+    transform: rotate(45deg);
+    top: $shift;
+    @include shadow($colour-shadow)
+  }
 }

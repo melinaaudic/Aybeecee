@@ -1,37 +1,54 @@
 #temoignages {
+  padding-bottom: $null;
   .wrapper {
     display: flex;
     align-items: flex-end;
-    > div {
+    .inner {
       margin-right: $normal-space;
-      padding: $normal-space $normal-space $null $normal-space;
-      background-color: $content-colour-white;
       width: 100%;
       height: 100%;
       font-size: 13px;
       &:last-child {
         margin-right: $null;
       }
-      > p {
-        font-style: italic;
-        margin-bottom: $normal-space;
-        strong {
+      .content {
+        background-color: $content-colour-white;
+        @include shadow ($colour-shadow);
+        padding: $normal-space;
+        p {
+          font-style: italic;
+          margin-bottom: $normal-space;
+          line-height: 120%;
+          strong {
+            font-weight: $bold;
+          }
+        }
+        .entreprise {
+          text-transform: uppercase;
           font-weight: $bold;
+          margin-bottom: $null;
+          font-style: normal;
+        }
+        .interlocuteur {
+          font-weight: $bold;
+          font-style: normal;
+          margin-bottom: $null;
         }
       }
-      .entreprise {
-        text-transform: uppercase;
-        font-weight: $bold;
-      }
-      .interlocuteur {
-        font-weight: $bold;
-      }
-      .titre-interlocuteur {
-        font-style: italic;
-        margin-bottom: $normal-space
-      }
+    }
+    .arrow {
+      @include arrow-shadow(75px, 35px, -60px, $colour-shadow, $content-colour-white)
+    }
+    .man {
       &:after {
-        @include triangle(35px, $content-colour-white);
+        @extend %after-content;
+        background-image: url(../medias/icon/man.svg);
+        background-repeat: no-repeat;
+        display: block;
+        margin-top: $large-space;
+        width: 108px;
+        height: 151px;
+        left: 21%;
       }
     }
   }

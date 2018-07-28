@@ -12,15 +12,6 @@ body {
   padding: 50px 0;
 }
 
-%background-base-color {
-  background-color: $base-colour;
-  //  @extend %padding-section;
-}
-
-%background-light-color {
-  background-color: $content-colour-light;
-}
-
 %width-container {
   width: 1200px;
   margin: 0 auto;
@@ -28,7 +19,7 @@ body {
 }
 
 .background-color {
-  @extend %background-base-color;
+  background-color: $base-colour;
   > * {
     @extend %width-container;
   }
@@ -38,7 +29,7 @@ body {
 }
 
 .background-light-color {
-  @extend %background-light-color;
+  background-color: $content-colour-light;
   > * {
     @extend %width-container;
   }

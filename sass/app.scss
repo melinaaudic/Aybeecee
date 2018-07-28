@@ -1,9 +1,9 @@
 // IMPORT ALL SASS DIRECTORY FILES
-// import global mixins
-@import "mixins";
-
 // import global variables
 @import "variables";
+
+// import global mixins
+@import "mixins";
 
 // import your directories
 @import "1-base/base-dir";
