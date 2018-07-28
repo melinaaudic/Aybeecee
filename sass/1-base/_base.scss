@@ -64,7 +64,10 @@ h2 {
 
 h3 {}
 
-p {}
+p {
+  line-height: normal;
+  font-weight: $light;
+}
 
 // IMAGE
 img {

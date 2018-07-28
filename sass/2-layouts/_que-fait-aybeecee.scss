@@ -1,0 +1,45 @@
+#que-fait-aybeecee {
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    .background {
+      @include calc(25%, $normal-space);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      box-sizing: border-box;
+      margin-right: $normal-space;
+      margin-bottom: $normal-space;
+      color: $content-colour-white;
+      text-align: center;
+      max-height: 280px;
+      &:nth-child(4n + 4) {
+        margin-right: $null;
+      }
+      &.base-colour {
+        padding: $normal-space;
+        background-color: $base-colour;
+      }
+      &.dark-colour {
+        padding: $normal-space;
+        background-color: $content-colour-dark
+      }
+      img {
+        margin-bottom: $normal-space;
+      }
+      &.image {
+        img {
+          margin-bottom: $null;
+        }
+      }
+      .intitule {
+        text-transform: uppercase;
+        font-weight: $bold;
+      }
+      .baseline {
+        text-align: left;
+        font-size: 40px;
+      }
+    }
+  }
+}

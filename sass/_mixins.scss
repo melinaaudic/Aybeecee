@@ -1,20 +1,12 @@
-@mixin triangle ($size, $color) {
-  @extend %after-content;
-  border-left: $size solid transparent;
-  border-right: $size solid transparent;
-  border-top: $size solid $color;
-  top: $size;
-  left: 29%;
-}
-
+// OMBRE
 @mixin shadow ($color) {
   -webkit-box-shadow: 4px 4px 10px -2px $color;
   -moz-box-shadow: 4px 4px 10px -2px $color;
   box-shadow: 4px 4px 10px -2px $color;
 }
 
-
-@mixin arrow-shadow ($width, $size, $shift, $colour-shadow, $color){
+// TRIANGLE + OMBRE
+@mixin arrow-shadow ($width, $size, $shift, $colour-shadow, $color) {
   width: $width;
   height: $size;
   position: relative;
@@ -30,4 +22,11 @@
     top: $shift;
     @include shadow($colour-shadow)
   }
+}
+
+// CALC
+@mixin calc ($percent, $pixel) {
+  width: -webkit-calc(#{$percent} - #{$pixel});
+  width: -moz-calc(#{$percent} - #{$pixel});
+  width: calc(#{$percent} - #{$pixel});
 }

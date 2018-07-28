@@ -50,6 +50,10 @@ h2 {
   font-weight: 500;
   font-size: 25px; }
 
+p {
+  line-height: normal;
+  font-weight: 300; }
+
 img {
   width: 100%; }
 
@@ -82,8 +86,7 @@ img {
     margin: 0 auto;
     font-size: 23px;
     text-align: center;
-    margin-bottom: 35px;
-    line-height: 140%; }
+    margin-bottom: 35px; }
     #qui-sommes-nous p:last-child {
       margin-bottom: 0; }
 
@@ -107,8 +110,7 @@ img {
         padding: 20px; }
         #temoignages .wrapper .inner .content p {
           font-style: italic;
-          margin-bottom: 20px;
-          line-height: 120%; }
+          margin-bottom: 20px; }
           #temoignages .wrapper .inner .content p strong {
             font-weight: 500; }
         #temoignages .wrapper .inner .content .entreprise {
@@ -145,5 +147,40 @@ img {
       width: 108px;
       height: 151px;
       left: 21%; }
+
+#que-fait-aybeecee .wrapper {
+  display: flex;
+  flex-wrap: wrap; }
+  #que-fait-aybeecee .wrapper .background {
+    width: -webkit-calc(25% - 20px);
+    width: -moz-calc(25% - 20px);
+    width: calc(25% - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+    max-height: 280px; }
+    #que-fait-aybeecee .wrapper .background:nth-child(4n + 4) {
+      margin-right: 0; }
+    #que-fait-aybeecee .wrapper .background.base-colour {
+      padding: 20px;
+      background-color: #ff3d46; }
+    #que-fait-aybeecee .wrapper .background.dark-colour {
+      padding: 20px;
+      background-color: #4a4a4a; }
+    #que-fait-aybeecee .wrapper .background img {
+      margin-bottom: 20px; }
+    #que-fait-aybeecee .wrapper .background.image img {
+      margin-bottom: 0; }
+    #que-fait-aybeecee .wrapper .background .intitule {
+      text-transform: uppercase;
+      font-weight: 500; }
+    #que-fait-aybeecee .wrapper .background .baseline {
+      text-align: left;
+      font-size: 40px; }
 
 /*# sourceMappingURL=app.css.map */
