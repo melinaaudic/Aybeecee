@@ -47,7 +47,7 @@ body {
   #aybeecee-pour-qui,
   #contact,
   footer,
-  .wrapper{
+  .wrapper {
     @extend %container-width;
   }
   .logo,
@@ -142,3 +142,4 @@ hr {
     color: $content-color-white;
   }
 }
+

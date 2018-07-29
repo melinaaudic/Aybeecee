@@ -1,3 +1,31 @@
-#contact{
-  
+#contact {
+  text-align: center;
+  p {
+    margin-bottom: $normal-space;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    input,
+    textarea {
+      width: 54%;
+      margin: 0 auto;
+      margin-bottom: $normal-space;
+      background: none;
+      border: none;
+      border-bottom: 2px dotted $content-color-white;
+      color: $content-color-white;
+      font-style: italic;
+      font-family: $montserrat;
+      font-size: 15px;
+      &[type="submit"] {
+        @include circle(100px, $content-color-dark);
+        border: none;
+        text-transform: uppercase;
+        font-style: normal;
+      }
+    }
+  }
+  @include placeholder($content-color-white);
 }

@@ -44,8 +44,36 @@
   column-rule: $divide;
 }
 
+// Column break
 @mixin break {
   break-inside: avoid-column;
   page-break-inside: avoid;
   -webkit-column-break-inside: avoid;
+}
+
+// Placeholder
+@mixin placeholder ($color) {
+  ::-webkit-input-placeholder {
+    color: $color;
+  }
+  ::-moz-placeholder {
+    color: $color;
+  }
+  :-ms-input-placeholder {
+    color: $color;
+  }
+  ::placeholder {
+    color: $color;
+    opacity: 1;
+  }
+}
+
+// Cercle
+@mixin circle($width, $color) {
+  width: $width;
+  height: $width;
+  background: $color;
+  -webkit-border-radius: $width/2;
+  -moz-border-radius: $width/2;
+  border-radius: $width/2;
 }

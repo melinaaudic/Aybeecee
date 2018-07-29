@@ -278,4 +278,45 @@ hr {
     page-break-inside: avoid;
     -webkit-column-break-inside: avoid; }
 
+#contact {
+  text-align: center; }
+  #contact p {
+    margin-bottom: 20px; }
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    #contact form input,
+    #contact form textarea {
+      width: 54%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      background: none;
+      border: none;
+      border-bottom: 2px dotted #ffffff;
+      color: #ffffff;
+      font-style: italic;
+      font-family: "Montserrat", sans-serif;
+      font-size: 15px; }
+      #contact form input[type="submit"],
+      #contact form textarea[type="submit"] {
+        width: 100px;
+        height: 100px;
+        background: #4a4a4a;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+        border: none;
+        text-transform: uppercase;
+        font-style: normal; }
+  #contact ::-webkit-input-placeholder {
+    color: #ffffff; }
+  #contact ::-moz-placeholder {
+    color: #ffffff; }
+  #contact :-ms-input-placeholder {
+    color: #ffffff; }
+  #contact ::placeholder {
+    color: #ffffff;
+    opacity: 1; }
+
 /*# sourceMappingURL=app.css.map */
