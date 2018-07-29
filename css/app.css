@@ -18,7 +18,8 @@ body {
 .background hr,
 .background #que-fait-aybeecee,
 .background #aybeecee-pour-qui,
-.background #contact {
+.background #contact,
+.background footer {
   padding: 50px 0; }
 
 .background.base-color {
@@ -43,10 +44,12 @@ body {
 .background #temoignages,
 .background #que-fait-aybeecee,
 .background #aybeecee-pour-qui,
-.background #contact,
-.background footer,
 .background .wrapper {
   width: 1200px;
+  margin: 0 auto; }
+.background #contact,
+.background footer {
+  width: 750px;
   margin: 0 auto; }
 .background #temoignages {
   padding-top: 50px; }
@@ -288,7 +291,7 @@ hr {
     justify-content: center; }
     #contact form input,
     #contact form textarea {
-      width: 54%;
+      width: 100%;
       margin: 0 auto;
       margin-bottom: 20px;
       background: none;
@@ -318,5 +321,19 @@ hr {
   #contact ::placeholder {
     color: #ffffff;
     opacity: 1; }
+
+footer {
+  width: 54%;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 50px;
+  -moz-column-gap: 50px;
+  column-gap: 50px;
+  -webkit-column-rule: none;
+  -moz-column-rule: none;
+  column-rule: none; }
+  footer p:last-child {
+    font-weight: 500; }
 
 /*# sourceMappingURL=app.css.map */

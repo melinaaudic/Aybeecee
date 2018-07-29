@@ -31,12 +31,6 @@ body {
     background-color: $content-color-white;
     color: $content-color-dark;
   }
-
-  %container-width {
-    width: 1200px;
-    margin: 0 auto;
-  }
-
   .logo,
   nav,
   #qui-sommes-nous,
@@ -45,18 +39,24 @@ body {
   #temoignages,
   #que-fait-aybeecee,
   #aybeecee-pour-qui,
-  #contact,
-  footer,
   .wrapper {
-    @extend %container-width;
+    width: 1200px;
+    margin: 0 auto;
   }
+  #contact,
+  footer {
+    width: 750px;
+    margin: 0 auto;
+  }
+
   .logo,
   #qui-sommes-nous,
   #market-place,
   hr,
   #que-fait-aybeecee,
   #aybeecee-pour-qui,
-  #contact {
+  #contact,
+  footer {
     @extend %padding-section;
   }
   #temoignages {
@@ -142,4 +142,3 @@ hr {
     color: $content-color-white;
   }
 }
-
