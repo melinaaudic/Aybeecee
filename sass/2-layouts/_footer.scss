@@ -1,10 +1,12 @@
 footer {
   width: 54%;  
   @include column (2, $large-space, none);
-
   p {
     &:last-child {
       font-weight: $bold;
+    }
+    a{
+      color: $content-color-white;
     }
   }
 }

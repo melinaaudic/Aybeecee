@@ -19,11 +19,17 @@
       font-style: italic;
       font-family: $montserrat;
       font-size: 15px;
+      padding: 2px 4px;
       &[type="submit"] {
         @include circle(100px, $content-color-dark);
         border: none;
         text-transform: uppercase;
         font-style: normal;
+      }
+      &:active {
+        outline: none;
+        background-color: blue;
+        box-shadow: none;
       }
     }
   }

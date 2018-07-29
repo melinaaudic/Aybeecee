@@ -300,7 +300,8 @@ hr {
       color: #ffffff;
       font-style: italic;
       font-family: "Montserrat", sans-serif;
-      font-size: 15px; }
+      font-size: 15px;
+      padding: 2px 4px; }
       #contact form input[type="submit"],
       #contact form textarea[type="submit"] {
         width: 100px;
@@ -312,6 +313,11 @@ hr {
         border: none;
         text-transform: uppercase;
         font-style: normal; }
+      #contact form input:active,
+      #contact form textarea:active {
+        outline: none;
+        background-color: blue;
+        box-shadow: none; }
   #contact ::-webkit-input-placeholder {
     color: #ffffff; }
   #contact ::-moz-placeholder {
@@ -335,5 +341,7 @@ footer {
   column-rule: none; }
   footer p:last-child {
     font-weight: 500; }
+  footer p a {
+    color: #ffffff; }
 
 /*# sourceMappingURL=app.css.map */
