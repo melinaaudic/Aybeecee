@@ -31,6 +31,7 @@
       @include arrow-shadow(75px, 35px, -60px, $color-shadow, $content-color-white, 30%)
     }
     .man {
+      width: 100%;
       &:after {
         @extend %after-content;
         background-image: url(../medias/icon/man.svg);

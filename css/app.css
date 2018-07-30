@@ -198,14 +198,16 @@ hr {
       -webkit-box-shadow: 4px 4px 10px -2px rgba(74, 74, 74, 0.25);
       -moz-box-shadow: 4px 4px 10px -2px rgba(74, 74, 74, 0.25);
       box-shadow: 4px 4px 10px -2px rgba(74, 74, 74, 0.25); }
-  #temoignages .wrapper .man:after {
-    background-image: url(../medias/icon/man.svg);
-    background-repeat: no-repeat;
-    display: block;
-    margin-top: 50px;
-    width: 108px;
-    height: 151px;
-    left: 21%; }
+  #temoignages .wrapper .man {
+    width: 100%; }
+    #temoignages .wrapper .man:after {
+      background-image: url(../medias/icon/man.svg);
+      background-repeat: no-repeat;
+      display: block;
+      margin-top: 50px;
+      width: 108px;
+      height: 151px;
+      left: 21%; }
 
 #que-fait-aybeecee .wrapper .inner {
   width: -webkit-calc(25% - 20px);
