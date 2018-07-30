@@ -1,0 +1,102 @@
+%unit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.market-place-visuel {
+  @extend %unit;
+  flex-direction: column;
+  position: relative;
+  .circle-03 {
+    @extend %unit;
+    @include circle(890px, $content-color-light);
+  }
+  .circle-02 {
+    @extend %unit;
+    @include circle(690px, $content-color-med);
+  }
+  .circle-01 {
+    @include circle(500px, $base-color);
+    @include shadow($content-color-dark);
+  }
+  .contain-principal {
+    padding: $large-space ($large-space * 2);
+  }
+  .contain-secondaire {
+    @extend %unit;
+    flex-direction: column;
+    @include circle(260px, $content-color-dark);
+    padding: $large-space;
+    box-sizing: border-box;
+    @include shadow($content-color-dark);
+    &:before {
+      content: '';
+      position: absolute;
+      width: 154px;
+      height: 24px;
+      background: url(../medias/icon/arrow-2.svg) no-repeat;
+    }
+    img {
+      margin-bottom: $normal-space;
+      max-height: 100px;
+    }
+    &.pdv {
+      position: absolute;
+      top: 10px;
+      right: 170px;
+      text-align: center;
+      &:before {
+        transform: rotate(-50deg);
+        bottom: 0px;
+        left: -50px;
+      }
+    }
+    &.grp {
+      position: absolute;
+      bottom: 130px;
+      left: 60px;
+      &:before {
+        transform: rotate(160deg);
+        top: 40px;
+        right: -90px;
+      }
+    }
+    &.fourn {
+      position: absolute;
+      bottom: 20px;
+      right: 170px;
+      &:before {
+        transform: rotate(40deg);
+        top: 10px;
+        left: -70px;
+      }
+    }
+  }
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: $light;
+  font-size: 18px;
+  margin-bottom: 5px;
+  line-height: normal;
+}
+
+ul {
+  li {
+    list-style-image: none;
+    padding-left: $normal-space;
+    text-indent: -$normal-space;
+    line-height: normal;
+    &:before {
+      content: '';
+      display: inline-block;
+      position: relative;
+      height: 11px;
+      width: 15px;
+      margin-right: 5px;
+      background: url(../medias/icon/arrow.svg) no-repeat;
+    }
+  }
+}

@@ -37,7 +37,44 @@
   <div class="background base-color">
     <section id="market-place">
       <h1>Market Place</h1>
-      <img src="" alt="Aybeecee">
+      <div class="market-place-visuel">
+        <div class="circle-03">
+          <div class="circle-02">
+            <div class="circle-01">
+              <div class="contain-principal">
+                <img src="medias/Aybeecee.png" alt="Aybeecee">
+                <h2>Place de marché privative</h2>
+                <ul>
+                  <li>Paramétrage personnalisé</li>
+                  <li>Catalogues de fournisseurs de produits et services référencés</li>
+                  <li>Proposition de nouveaux fournisseurs</li>
+                  <li>Maîtrise des flux d’information, financiers et logistiques</li>
+                  <li>Analytics</li>
+                  <li>Offres complémentaires : stockage, financement</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contain-secondaire pdv">
+          <img src="medias/icon/shop.svg" alt="">
+          <h2>Points de<br> vente</h2>
+        </div>
+        <div class="contain-secondaire grp">
+          <h2>Groupe, groupements de retailers : </h2>
+          <ul>
+            <li>Sélection de fournisseurs</li>
+            <li>Négociation</li>
+            <li>Gestion des accès</li>
+          </ul>
+        </div>
+        <div class="contain-secondaire fourn">
+          <img src="medias/icon/market-place-fournisseur.svg" alt="">
+          <h2>Fournisseurs</h2>
+        </div>
+      </div>
+
+
     </section>
     <hr>
     <section id="temoignages">

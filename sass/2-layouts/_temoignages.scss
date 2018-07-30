@@ -33,7 +33,7 @@
     .man {
       width: 100%;
       &:after {
-        @extend %after-content;
+        @extend %content;
         background-image: url(../medias/icon/man.svg);
         background-repeat: no-repeat;
         display: block;

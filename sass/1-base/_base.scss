@@ -23,6 +23,10 @@ body {
     background-color: $content-color-light;
     color: $content-color-dark;
   }
+  &.medium-color {
+    background-color: $content-color-med;
+    color: $content-color-dark;
+  }
   &.dark-color {
     background-color: $content-color-dark;
     color: $content-color-white;
@@ -141,9 +145,11 @@ hr {
     color: $content-color-white;
   }
 }
-.hide{
+
+.hide {
   display: none;
 }
-.show{
+
+.show {
   display: block;
 }

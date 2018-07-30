@@ -30,6 +30,9 @@ body {
 .background.light-color {
   background-color: #f2f2f2;
   color: #4a4a4a; }
+.background.medium-color {
+  background-color: #e8e8e8;
+  color: #4a4a4a; }
 .background.dark-color {
   background-color: #4a4a4a;
   color: #ffffff; }
@@ -157,6 +160,109 @@ hr {
     margin-bottom: 35px; }
     #qui-sommes-nous p:last-child {
       margin-bottom: 0; }
+
+.market-place-visuel, .market-place-visuel .circle-03, .market-place-visuel .circle-02, .market-place-visuel .contain-secondaire {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.market-place-visuel {
+  flex-direction: column;
+  position: relative; }
+  .market-place-visuel .circle-03 {
+    width: 890px;
+    height: 890px;
+    background: #f2f2f2;
+    -webkit-border-radius: 445px;
+    -moz-border-radius: 445px;
+    border-radius: 445px; }
+  .market-place-visuel .circle-02 {
+    width: 690px;
+    height: 690px;
+    background: #e8e8e8;
+    -webkit-border-radius: 345px;
+    -moz-border-radius: 345px;
+    border-radius: 345px; }
+  .market-place-visuel .circle-01 {
+    width: 500px;
+    height: 500px;
+    background: #ff3d46;
+    -webkit-border-radius: 250px;
+    -moz-border-radius: 250px;
+    border-radius: 250px;
+    -webkit-box-shadow: 4px 4px 10px -2px #4a4a4a;
+    -moz-box-shadow: 4px 4px 10px -2px #4a4a4a;
+    box-shadow: 4px 4px 10px -2px #4a4a4a; }
+  .market-place-visuel .contain-principal {
+    padding: 50px 100px; }
+  .market-place-visuel .contain-secondaire {
+    flex-direction: column;
+    width: 260px;
+    height: 260px;
+    background: #4a4a4a;
+    -webkit-border-radius: 130px;
+    -moz-border-radius: 130px;
+    border-radius: 130px;
+    padding: 50px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 4px 4px 10px -2px #4a4a4a;
+    -moz-box-shadow: 4px 4px 10px -2px #4a4a4a;
+    box-shadow: 4px 4px 10px -2px #4a4a4a; }
+    .market-place-visuel .contain-secondaire:before {
+      content: '';
+      position: absolute;
+      width: 154px;
+      height: 24px;
+      background: url(../medias/icon/arrow-2.svg) no-repeat; }
+    .market-place-visuel .contain-secondaire img {
+      margin-bottom: 20px;
+      max-height: 100px; }
+    .market-place-visuel .contain-secondaire.pdv {
+      position: absolute;
+      top: 10px;
+      right: 170px;
+      text-align: center; }
+      .market-place-visuel .contain-secondaire.pdv:before {
+        transform: rotate(-50deg);
+        bottom: 0px;
+        left: -50px; }
+    .market-place-visuel .contain-secondaire.grp {
+      position: absolute;
+      bottom: 130px;
+      left: 60px; }
+      .market-place-visuel .contain-secondaire.grp:before {
+        transform: rotate(160deg);
+        top: 40px;
+        right: -90px; }
+    .market-place-visuel .contain-secondaire.fourn {
+      position: absolute;
+      bottom: 20px;
+      right: 170px; }
+      .market-place-visuel .contain-secondaire.fourn:before {
+        transform: rotate(40deg);
+        top: 10px;
+        left: -70px; }
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 5px;
+  line-height: normal; }
+
+ul li {
+  list-style-image: none;
+  padding-left: 20px;
+  text-indent: -20px;
+  line-height: normal; }
+  ul li:before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    height: 11px;
+    width: 15px;
+    margin-right: 5px;
+    background: url(../medias/icon/arrow.svg) no-repeat; }
 
 #temoignages .wrapper {
   align-items: flex-end; }
