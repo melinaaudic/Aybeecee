@@ -1,6 +1,6 @@
 .logo {
   text-align: center;
-  img{
+  img {
     max-width: 690px;
   }
 }
@@ -15,10 +15,16 @@
     font-size: 23px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    a{
-      text-decoration: none;
+    li {
+      padding: 0;
+      text-indent: 0;
+      &:before {
+        display: none;
+      }
+    }
+    a {
       color: $content-color-white;
-      &:hover{
+      &:hover {
         color: $content-color-dark;
       }
     }

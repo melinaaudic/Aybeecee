@@ -93,7 +93,7 @@
         </div>
         <div class="inner">
           <div class="content background white-color">
-            <p>« Avec plus de 1100 boutiques, Orange est leader en France en nombre de points de vente. Au delà d’e-cats que nous utilisons aujourd’hui, nous attendons avec Aybeecee un interface unique et simple d’utilisation, qui soit <strong>un espace unique</strong> pour accéder à tous les produits et à toutes les solutions <strong>d’aide à la vente</strong> en boutique. »</p>
+            <p>« Avec plus de 1 100 boutiques, Orange est leader en France en nombre de point de vente. Au-delà d’e-cats que nous utilisons aujourd’hui, nous attendons avec Aybeecee une interface unique et simple d’utilisation, qui soit <strong>un espace unique</strong> pour accéder à tous les produits et à toutes les solutions <strong>d’aide à la vente</strong> en boutique. »</p>
             <p class="entreprise">Orange</p>
             <p class="interlocuteur">Christelle Moreau</p>
             <p>Directrice du Pilotage des Moyens Logistiques</p>
@@ -154,17 +154,33 @@
       <h1>Que fait Aybeecee pour vous</h1>
       <div class="wrapper">
         <div class="inner">
-          <div class="content background base-color">
+          <div class="content background base-color main">
             <img src="medias/icon/que-fait-aybeecee-1.svg" class="svg" alt="">
             <p class="intitule">… prend</p>
             <p>vos couleurs, s’adapte à votre univers et aux contraintes de votre réseau de distribution</p>
           </div>
+          <div class="content background dark-color second">
+            <ul>
+              <li>Univers personnalisé</li>
+              <li>Mode SaaS</li>
+              <li>Responsive design</li>
+              <li>Profils/quotas</li>
+            </ul>
+          </div>
         </div>
         <div class="inner">
-          <div class="content background dark-color">
+          <div class="content background dark-color main">
             <img src="medias/icon/que-fait-aybeecee-2.svg" class="svg" alt="">
             <p class="intitule">… vous informe</p>
             <p>clairement et en temps réel de toutes vos commandes, livraison et factures</p>
+          </div>
+          <div class="content background base-color second">
+            <ul>
+              <li>Mails, SMS, ...</li>
+              <li>Temps réel</li>
+              <li>Reporting</li>
+              <li>Analytics</li>
+            </ul>
           </div>
         </div>
         <div class="inner">
@@ -173,17 +189,35 @@
           </div>
         </div>
         <div class="inner">
-          <div class="content background dark-color">
+          <div class="content background dark-color main">
             <img src="medias/icon/que-fait-aybeecee-3.svg" class="svg" alt="">
             <p class="intitule">… vous remet</p>
             <p>une facture unique de tous vos achats et peut également vous proposer des solutions de ﬁnancement</p>
           </div>
+          <div class="content background base-color second">
+            <ul>
+              <li>Factures en ligne</li>
+              <li>Avoirs</li>
+              <li>Commisionnements</li>
+              <li>Financement</li>
+            </ul>
+          </div>
         </div>
         <div class="inner">
-          <div class="content background dark-color">
+          <div class="content background dark-color main">
             <img src="medias/icon/que-fait-aybeecee-4.svg" class="svg" alt="">
             <p class="intitule">… se connecte</p>
             <p>à vos fournisseurs et le cas échéant vous propose des produits et des services complémentaires</p>
+          </div>
+          <div class="content background base-color second">
+            <ul>
+              <li>Plug & Play</li>
+              <li>One Stop Shopping</li>
+              <li>Moteur de recherche</li>
+              <li>Catalogues</li>
+              <li>Remises</li>
+              <li>Nouveautés</li>
+            </ul>
           </div>
         </div>
         <div class="inner">
@@ -192,17 +226,36 @@
           </div>
         </div>
         <div class="inner">
-          <div class="content background dark-color">
+          <div class="content background dark-color main">
             <img src="medias/icon/que-fait-aybeecee-5.svg" class="svg" alt="">
             <p class="intitule">… s'occupe</p>
             <p>de vos commandes, des livraisons, des retours, des reliquats, etc.</p>
           </div>
+          <div class="content background base-color second">
+            <ul>
+              <li>End to end management</li>
+              <li>Tracking</li>
+              <li>Alertes</li>
+              <li>Gestion des retours</li>
+            </ul>
+          </div>
         </div>
         <div class="inner">
-          <div class="content background base-color">
+          <div class="content background base-color main">
             <img src="medias/icon/que-fait-aybeecee-6.svg" class="svg" alt="">
             <p class="intitule">… apprend</p>
             <p>en permanence pour vous proposer toujours les meilleures offres et le meilleur service</p>
+          </div>
+          <div class="content background dark-color second">
+            <ul>
+              <li>Business Intelligence</li>
+              <li>Data mining</li>
+              <li>Analyse prédictive</li>
+              <li>Politique qualité</li>
+              <li>KPI's</li>
+              <li>Comparateurs</li>
+              <li>Nouveaux fournisseurs</li>
+            </ul>
           </div>
         </div>
         <div class="inner">
@@ -211,10 +264,19 @@
           </div>
         </div>
         <div class="inner">
-          <div class="content background base-color">
+          <div class="content background base-color main">
             <img src="medias/icon/que-fait-aybeecee-7.svg" class="svg" alt="">
             <p class="intitule">… est</p>
             <p>à votre écoute 7 jours sur 7, 24 heures sur 24</p>
+          </div>
+          <div class="content background dark-color second">
+            <ul>
+              <li>Service Clients</li>
+              <li>Analyse Satisfaction</li>
+              <li>Chatbot</li>
+              <li>FAQ, Tutoriels</li>
+              <li>Equipe dédiée</li>
+            </ul>
           </div>
         </div>
         <div class="inner">

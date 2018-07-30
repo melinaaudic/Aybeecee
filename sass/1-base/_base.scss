@@ -145,9 +145,23 @@ hr {
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
-.show {
-  display: block;
+//Style des listes
+ul {
+  li {
+    list-style-image: none;
+    padding-left: $normal-space;
+    text-indent: -$normal-space;
+    &:before {
+      content: '';
+      display: inline-block;
+      position: relative;
+      height: 11px;
+      width: 15px;
+      margin-right: 5px;
+      background: url(../medias/icon/arrow.svg) no-repeat;
+    }
+  }
 }

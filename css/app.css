@@ -120,10 +120,20 @@ hr {
     color: #ffffff; }
 
 .hide {
-  display: none; }
+  display: none !important; }
 
-.show {
-  display: block; }
+ul li {
+  list-style-image: none;
+  padding-left: 20px;
+  text-indent: -20px; }
+  ul li:before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    height: 11px;
+    width: 15px;
+    margin-right: 5px;
+    background: url(../medias/icon/arrow.svg) no-repeat; }
 
 /* LAYOUTS */
 .logo {
@@ -141,8 +151,12 @@ hr {
     font-size: 23px;
     letter-spacing: 1px;
     text-transform: uppercase; }
+    .nav ul li {
+      padding: 0;
+      text-indent: 0; }
+      .nav ul li:before {
+        display: none; }
     .nav ul a {
-      text-decoration: none;
       color: #ffffff; }
       .nav ul a:hover {
         color: #4a4a4a; }
@@ -246,18 +260,6 @@ hr {
     font-weight: 300;
     font-size: 18px;
     margin-bottom: 5px; }
-  .market-place-visuel ul li {
-    list-style-image: none;
-    padding-left: 20px;
-    text-indent: -20px; }
-    .market-place-visuel ul li:before {
-      content: '';
-      display: inline-block;
-      position: relative;
-      height: 11px;
-      width: 15px;
-      margin-right: 5px;
-      background: url(../medias/icon/arrow.svg) no-repeat; }
 
 #temoignages .wrapper {
   align-items: flex-end; }
@@ -314,15 +316,27 @@ hr {
   width: -webkit-calc(25% - 20px);
   width: -moz-calc(25% - 20px);
   width: calc(25% - 20px); }
+  #que-fait-aybeecee .wrapper .inner:hover .main {
+    opacity: 0; }
+  #que-fait-aybeecee .wrapper .inner:hover .second {
+    opacity: 1; }
   #que-fait-aybeecee .wrapper .inner .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 20px;
     text-align: center;
-    max-height: 280px; }
+    max-height: 280px;
+    opacity: 1;
+    transition: all .25s ease; }
     #que-fait-aybeecee .wrapper .inner .content .svg {
       margin-bottom: 20px; }
+  #que-fait-aybeecee .wrapper .inner .second {
+    text-align: left;
+    position: absolute;
+    width: 240px;
+    min-height: 240px;
+    opacity: 0; }
   #que-fait-aybeecee .wrapper .inner .intitule {
     text-transform: uppercase;
     font-weight: 500; }
