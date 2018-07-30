@@ -4,6 +4,7 @@ body {
   font-size: 16px;
   margin: 0 auto;
   color: $content-color-dark;
+  line-height: normal;
 }
 
 // Gestion des fonds
@@ -108,15 +109,12 @@ h2 {
 h3 {
   font-family: $oswald;
   font-size: 23px;
-  line-height: normal;
   text-transform: uppercase;
   margin-bottom: $normal-space;
 }
 
 p {
   font-size: 15px;
-
-  line-height: normal;
   font-weight: $light;
 }
 

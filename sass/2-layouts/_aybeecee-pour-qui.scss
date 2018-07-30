@@ -3,7 +3,7 @@
     .inner {
       @include calc(100%/6, $normal-space);
       .content {
-        max-height: 607px;
+        max-height: 394px;
         text-align: center;
         h3 {
           a {
@@ -24,6 +24,9 @@
 }
 
 .rubrique {
+  .background {
+    @include shadow($color-shadow);
+  }
   h2 {
     padding: $normal-space $null;
     justify-content: center;

@@ -57,7 +57,7 @@
           </div>
         </div>
         <div class="contain-secondaire pdv">
-          <img src="medias/icon/shop.svg" alt="">
+          <img src="medias/icon/market-place-magasin.svg" alt="">
           <h2>Points de<br> vente</h2>
         </div>
         <div class="contain-secondaire grp">
@@ -155,71 +155,71 @@
       <div class="wrapper">
         <div class="inner">
           <div class="content background base-color">
-            <img src="medias/icon/whatdo-01.svg" class="svg" alt="">
+            <img src="medias/icon/que-fait-aybeecee-1.svg" class="svg" alt="">
             <p class="intitule">… prend</p>
             <p>vos couleurs, s’adapte à votre univers et aux contraintes de votre réseau de distribution</p>
           </div>
         </div>
         <div class="inner">
           <div class="content background dark-color">
-            <img src="medias/icon/whatdo-02.svg" class="svg" alt="">
+            <img src="medias/icon/que-fait-aybeecee-2.svg" class="svg" alt="">
             <p class="intitule">… vous informe</p>
             <p>clairement et en temps réel de toutes vos commandes, livraison et factures</p>
           </div>
         </div>
         <div class="inner">
           <div class="content background image">
-            <img src="../aybeecee/medias/whatdoaybeecee-01.png" alt="">
+            <img src="medias/que-fait-aybeecee-1.png" alt="">
           </div>
         </div>
         <div class="inner">
           <div class="content background dark-color">
-            <img src="medias/icon/whatdo-03.svg" class="svg" alt="">
+            <img src="medias/icon/que-fait-aybeecee-3.svg" class="svg" alt="">
             <p class="intitule">… vous remet</p>
             <p>une facture unique de tous vos achats et peut également vous proposer des solutions de ﬁnancement</p>
           </div>
         </div>
         <div class="inner">
           <div class="content background dark-color">
-            <img src="medias/icon/whatdo-04.svg" class="svg" alt="">
+            <img src="medias/icon/que-fait-aybeecee-4.svg" class="svg" alt="">
             <p class="intitule">… se connecte</p>
             <p>à vos fournisseurs et le cas échéant vous propose des produits et des services complémentaires</p>
           </div>
         </div>
         <div class="inner">
           <div class="content background image">
-            <img src="../aybeecee/medias/whatdoaybeecee-02.png" alt="">
+            <img src="medias/que-fait-aybeecee-2.png" alt="">
           </div>
         </div>
         <div class="inner">
           <div class="content background dark-color">
-            <img src="medias/icon/whatdo-05.svg" class="svg" alt="">
+            <img src="medias/icon/que-fait-aybeecee-5.svg" class="svg" alt="">
             <p class="intitule">… s'occupe</p>
             <p>de vos commandes, des livraisons, des retours, des reliquats, etc.</p>
           </div>
         </div>
         <div class="inner">
           <div class="content background base-color">
-            <img src="medias/icon/whatdo-06.svg" class="svg" alt="">
+            <img src="medias/icon/que-fait-aybeecee-6.svg" class="svg" alt="">
             <p class="intitule">… apprend</p>
             <p>en permanence pour vous proposer toujours les meilleures offres et le meilleur service</p>
           </div>
         </div>
         <div class="inner">
           <div class="content background image">
-            <img src="../aybeecee/medias/whatdoaybeecee-03.png" alt="">
+            <img src="medias/que-fait-aybeecee-3.png" alt="">
           </div>
         </div>
         <div class="inner">
           <div class="content background base-color">
-            <img src="medias/icon/whatdo-07.svg" class="svg" alt="">
+            <img src="medias/icon/que-fait-aybeecee-7.svg" class="svg" alt="">
             <p class="intitule">… est</p>
             <p>à votre écoute 7 jours sur 7, 24 heures sur 24</p>
           </div>
         </div>
         <div class="inner">
           <div class="content background image">
-            <img src="../aybeecee/medias/whatdoaybeecee-04.png" alt="">
+            <img src="medias/que-fait-aybeecee-4.png" alt="">
           </div>
         </div>
         <div class="inner">
@@ -236,37 +236,37 @@
       <div class="wrapper">
         <div class="inner">
           <div class="content background image">
-            <img src="medias/forwho-01.jpg" alt="">
+            <img src="medias/aybeece-pour-qui-1.jpg" alt="">
           </div>
         </div>
         <div class="inner">
           <div class="content background base-color">
             <h3><a href="#responsable-reseau">Responsable réseau</a></h3>
-            <img src="medias/icon/forwho-12.svg" class="svg" alt="">
+            <img src="medias/icon/aybeece-pour-qui-1.svg" class="svg" alt="">
             <p><strong>Gérez tous les achats</strong> de votre réseau de vente de façon simple, efficace et économique</p>
           </div>
         </div>
         <div class="inner">
           <div class="content background image">
-            <img src="medias/forwho-02.jpg" alt="">
+            <img src="medias/aybeece-pour-qui-2.jpg" alt="">
           </div>
         </div>
         <div class="inner">
           <div class="content background base-color">
             <h3><a href="#responsable-point-vente">Responsable point de vente</a></h3>
-            <img src="medias/icon/forwho-13.svg" class="svg" alt="">
+            <img src="medias/icon/aybeece-pour-qui-2.svg" class="svg" alt="">
             <p><strong>Optimisez vos achats</strong> de produits et services pour une meilleure productivité de votre point de vente</p>
           </div>
         </div>
         <div class="inner">
           <div class="content background image">
-            <img src="medias/forwho-03.jpg" alt="">
+            <img src="medias/aybeece-pour-qui-3.jpg" alt="">
           </div>
         </div>
         <div class="inner">
           <div class="content background base-color">
             <h3><a href="#fournisseur">Fournisseur</a></h3>
-            <img src="medias/icon/forwho-14.svg" class="svg" alt="">
+            <img src="medias/icon/aybeece-pour-qui-3.svg" class="svg" alt="">
             <p><strong>Proposez votre catalogue</strong> de produits et de prestations de services à des réseaux de distribution structurés et performants</p>
           </div>
         </div>
