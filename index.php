@@ -286,13 +286,16 @@
     <section id="contact">
       <h1>Contact</h1>
       <p>N’hésitez pas à nous contacter via le formulaire ou directement par téléphone ou mail !</p>
-      <form action="">
-        <input type="text" name="prenom" placeholder="Prénom*" required>
-        <input type="text" name="nom" placeholder="Nom*" required>
-        <input type="email" name="email" placeholder="E-mail*" required>
+      <form action="form.php" method="post" name="contact">
+        <input type="text" name="prenom" id="prenom" placeholder="Prénom*" required>
+        <span class="hide field_missing" id="prenom_missing">Veuillez entrer votre prénom</span>
+        <input type="text" name="nom" id="nom" placeholder="Nom*" required>
+        <span class="hide field_missing" id="nom_missing">Veuillez entre votre nom</span>
+        <input type="email" name="email" id="email" placeholder="E-mail*" required>
+        <span class="hide field_missing" id="email_missing">Veuillez entre votre e-mail</span>
         <textarea name="message" id="message" cols="30" rows="1" placeholder="Message*" required></textarea>
-        <div class="message"></div>
-        <input type="submit" name="submit" value="Envoyer">
+        <span class="hide field_missing" id="message_missing">Veuillez entre votre message</span>
+        <input type="submit" name="submit" value="Envoyer" id="submit">
       </form>
     </section>
     <footer>
@@ -301,7 +304,7 @@
     </footer>
   </div>
 
-    <script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

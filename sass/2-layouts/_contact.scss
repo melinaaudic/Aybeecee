@@ -11,7 +11,8 @@
     textarea {
       width: 100%;
       margin: 0 auto;
-      margin-bottom: $normal-space;
+      margin-bottom: $normal-space / 2;
+      margin-top: $normal-space / 2;
       background: none;
       border: none;
       border-bottom: 2px dotted $content-color-white;
@@ -25,12 +26,18 @@
         border: none;
         text-transform: uppercase;
         font-style: normal;
+        cursor: pointer;
       }
       &:active {
         outline: none;
-        background-color: blue;
         box-shadow: none;
       }
+    }
+    .field_missing {
+      margin-bottom: $normal-space /2;
+      text-align: left;
+      font-size: 13px;
+      font-style: italic;
     }
   }
   @include placeholder($content-color-white);

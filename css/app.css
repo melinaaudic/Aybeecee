@@ -117,6 +117,12 @@ hr {
     background-repeat: repeat-x;
     color: #ffffff; }
 
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
 /* LAYOUTS */
 .logo {
   text-align: center; }
@@ -293,7 +299,8 @@ hr {
     #contact form textarea {
       width: 100%;
       margin: 0 auto;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+      margin-top: 10px;
       background: none;
       border: none;
       border-bottom: 2px dotted #ffffff;
@@ -312,12 +319,17 @@ hr {
         border-radius: 50px;
         border: none;
         text-transform: uppercase;
-        font-style: normal; }
+        font-style: normal;
+        cursor: pointer; }
       #contact form input:active,
       #contact form textarea:active {
         outline: none;
-        background-color: blue;
         box-shadow: none; }
+    #contact form .field_missing {
+      margin-bottom: 10px;
+      text-align: left;
+      font-size: 13px;
+      font-style: italic; }
   #contact ::-webkit-input-placeholder {
     color: #ffffff; }
   #contact ::-moz-placeholder {
