@@ -126,6 +126,8 @@ hr {
 /* LAYOUTS */
 .logo {
   text-align: center; }
+  .logo img {
+    max-width: 690px; }
 
 .nav {
   padding-top: 0;
