@@ -1,53 +1,133 @@
-#header,
-#header-scroll {
-  position: fixed;
-  width: 100%;
-  z-index: 999;
-}
+//#scroll {
+//  padding-top: 0px;
+//  @include breakpoint(tablet-portrait) {
+//    padding-top: 260px;
+//  }
+//  @include breakpoint(tablet-landscape) {
+//    padding-top: 250px;
+//  }
+//}
 
-.logo {
-  text-align: center;
-  img {
-    max-width: 690px;
+#menuToggle {
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  input {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+
+    cursor: pointer;
+
+    opacity: 0;
+    /* hide this */
+    z-index: 99999;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+    &:checked ~ .burger span {
+      opacity: 0;
+      background: $content-color-dark;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    &:checked ~ .burger span:nth-last-child(1) {
+      opacity: 1;
+      transform: rotate(-45deg) translate(-2px, -1px);
+    }
+    &:checked ~ .burger span:nth-last-child(3) {
+      opacity: 1;
+      transform: rotate(45deg) translate(1px, -1px);
+    }
+    &:checked ~ ul {
+      transform: none;
+    }
+    @include breakpoint(tablet-portrait) {
+      display: none;
+    }
   }
-}
-
-.nav {
-  ul {
+  .burger {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    font-family: $oswald;
-    font-size: 23px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    li {
-      padding: $null;
-      text-indent: 0;
-      &:before {
-        display: none;
+    height: 24px;
+    span {
+      width: 34px;
+      height: 4px;
+      background: $content-color-dark;
+      z-index: 9999;
+      transform-origin: 4px 0px;
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+      opacity 0.55s ease;
+      &:first-child {
+        transform-origin: 0% 0%;
+      }
+      &:nth-last-child(2) {
+        transform-origin: 0% 100%;
       }
     }
-    a {
-      color: $content-color-white;
-      &:hover {
-        color: $content-color-dark;
-      }
-    }
-  }
-}
-
-#header-scroll {
-  ul {
-    font-size: 19px;
-    align-items: center;
-    li {
-      img {
-        max-width: 150px;
-      }
+    @include breakpoint(tablet-portrait) {
+      display: none;
     }
   }
 }
 
-#scroll {
-  padding-top: 430px;
+#menu {
+  position: absolute;
+  @include calc-plus(100%, 40px);
+  margin: -100px 0 0 -50px;
+  padding: 130px $large-space 50px;
+  background: $base-color;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+  z-index: 999;
+  @include breakpoint(tablet-portrait) {
+    padding: 20px 10px 10px;
+    position: fixed;
+    transform: translate(0, 0);
+    top: 100px;
+    left: 40px;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  font-family: $oswald;
+  font-size: 23px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  @include breakpoint(tablet-portrait) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  li {
+    padding: $null;
+    text-indent: 0;
+    &:before {
+      display: none;
+    }
+    img {
+      max-width: 250px;
+      margin-bottom: $normal-space;
+      @include breakpoint(tablet-portrait) {
+        max-width: 170px;
+      }
+      @include breakpoint(desktop) {
+        max-width: 500px;
+      }
+    }
+    @include breakpoint(tablet-portrait) {
+      margin: 0 10px;
+      &:first-child {
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
 }

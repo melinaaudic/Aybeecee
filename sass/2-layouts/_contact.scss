@@ -5,7 +5,10 @@
   }
   form {
     @extend %flex-center;
-    flex-direction: column;
+      flex-direction: column;
+    @include breakpoint(tablet-portrait) {
+      flex-direction: column;
+    }
     input,
     textarea {
       width: 100%;

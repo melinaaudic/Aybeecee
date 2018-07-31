@@ -1,22 +1,37 @@
-// Scroll du header
-var header = document.getElementById("header");
-var headerScroll = document.getElementById("header-scroll");
-var divAfter = document.getElementById("scroll");
+// Padding supérieur au header fixe
+
+var scroll = document.getElementById("scroll");
+var menu = document.getElementById("menu");
+var stylePara = getComputedStyle(document.getElementById("menu"));
+
+function padding(x) {
+  if (x.matches) { // If media query matches
+    scroll.style.paddingTop = 0;
+  } else {
+    scroll.style.paddingTop = stylePara.height;
+  }
+}
+
+var x = window.matchMedia("(max-width: 600px)")
+padding(x) // Call listener function at run time
+x.addListener(padding) // Attach listener function on state changes
+
+// Diminution de l'image
+var logo = document.getElementById("logo");
 
 function menuScroll() {
   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-    header.classList.add("hide");
-    headerScroll.classList.remove("hide");
-    divAfter.style.paddingTop = "100px";
+    logo.style.height = "80px";
+    logo.style.width = "auto";
 
   } else {
-    header.classList.remove("hide");
-    headerScroll.classList.add("hide");
-    divAfter.style.paddingTop = "430px";
+    logo.style.height = "auto";
   }
 }
 
 window.addEventListener("scroll", menuScroll);
+
+
 
 // Contact form
 var form = document.querySelector("form");

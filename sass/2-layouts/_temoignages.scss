@@ -2,10 +2,25 @@
   .wrapper {
     align-items: flex-end;
     .inner {
-      @include calc(100% / 6, $normal-space);
-      height: 100%;
-      &:last-child {
-        margin-right: $null;
+      @include calc(100%, 0);
+      @include breakpoint(tablet-portrait) {
+        @include calc(100% / 3, $normal-space);
+        &:nth-child(3n + 3) {
+          margin-right: $null;
+        }
+      }
+      @include breakpoint(desktop) {
+        @include calc(100% / 6, $normal-space);
+        p {
+          font-size: 13px;
+
+        }
+        &:nth-child(3n + 3) {
+          margin-right: $normal-space;
+        }
+        &:last-child {
+          margin-right: $null;
+        }
       }
       .content {
         p {
@@ -26,7 +41,16 @@
       }
     }
     .arrow {
-      @include arrow-shadow(75px, 35px, -60px, $color-shadow, $content-color-white, 30%)
+      @include arrow-shadow(75px, 35px, -60px, $color-shadow, $content-color-white, 40%);
+      @include breakpoint(tablet-portrait) {
+        @include arrow-shadow(75px, 35px, -60px, $color-shadow, $content-color-white, 30%);
+      }
+      @include breakpoint(tablet-landscape) {
+        @include arrow-shadow(75px, 35px, -60px, $color-shadow, $content-color-white, 37%);
+      }
+      @include breakpoint(desktop) {
+        @include arrow-shadow(75px, 35px, -60px, $color-shadow, $content-color-white, 31%);
+      }
     }
     .man {
       width: 100%;
@@ -39,7 +63,16 @@
         margin-top: $large-space;
         width: 108px;
         height: 151px;
-        left: 21%;
+        left: 35%;
+        @include breakpoint(tablet-portrait) {
+          left: 21%;
+        }
+        @include breakpoint(tablet-landscape) {
+          left: 31%;
+        }
+        @include breakpoint(desktop) {
+          left: 21%;
+        }
       }
     }
   }

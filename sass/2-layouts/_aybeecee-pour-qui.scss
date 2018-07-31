@@ -1,9 +1,23 @@
 #aybeecee-pour-qui {
   .wrapper {
+    flex-direction: column;
+    @include breakpoint(phone) {
+      flex-direction: row;
+    }
     .inner {
-      @include calc(100%/6, $normal-space);
+      @include calc(100%, $normal-space);
+      margin-bottom: $normal-space;
+      height: 100%;
+      @include breakpoint(phone) {
+        @include calc(100%/2, $normal-space);
+      }
+      @include breakpoint(tablet-landscape) {
+        @include calc(100%/3, $normal-space);
+      }
+      @include breakpoint(desktop) {
+        @include calc(100%/6, $normal-space);
+      }
       .content {
-        max-height: 394px;
         text-align: center;
         h3 {
           a {
@@ -14,10 +28,6 @@
           max-height: 100px;
           margin-bottom: $normal-space;
         }
-      }
-
-      &:last-child {
-        margin-right: $null;
       }
     }
   }
@@ -41,9 +51,16 @@
     .inner {
       .content {
         box-shadow: none;
-        @include column(4, $large-space, 3px dotted $base-color);
+        @include column(1, $large-space, 3px dotted $base-color);
+        @include breakpoint(tablet-landscape) {
+          @include column(3, $large-space, 3px dotted $base-color);
+        }
+        @include breakpoint(desktop) {
+          @include column(4, $large-space, 3px dotted $base-color);
+        }
         .intro {
           font-size: 18px;
+          margin-bottom: $normal-space /2;
           span {
             color: $base-color;
             text-transform: uppercase;
@@ -57,7 +74,6 @@
           }
         }
       }
-
     }
   }
 }

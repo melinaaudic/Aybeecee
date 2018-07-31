@@ -1,15 +1,19 @@
 body {
   font-family: $montserrat;
   font-weight: $light;
-  font-size: 16px;
+  font-size: 12px;
   margin: 0 auto;
   color: $content-color-dark;
   line-height: normal;
-  *{
-    
-  box-sizing: border-box;
+
+  @include breakpoint(tablet-landscape) {
+    font-size: 16px;
   }
-  
+  * {
+
+    box-sizing: border-box;
+  }
+
 }
 
 // Gestion des fonds
@@ -49,14 +53,31 @@ hr,
 #que-fait-aybeecee,
 #aybeecee-pour-qui,
 .wrapper {
-  width: 1200px;
   margin: 0 auto;
+  @include breakpoint(phone-small) {
+    width: 100%;
+  }
+  @include breakpoint(phone) {
+    width: 100%;
+  }
+  @include breakpoint(tablet-portrait) {
+    width: 600px;
+  }
+  @include breakpoint(tablet-landscape) {
+    width: 900px;
+  }
+  @include breakpoint(desktop) {
+    width: 1200px;
+  }
 }
 
 #contact,
 footer {
-  width: 750px;
+  width: 100%;
   margin: 0 auto;
+  @include breakpoint(tablet-portrait) {
+    width: 70%;
+  }
 }
 
 // Paddings sur les différentes sections
@@ -76,19 +97,18 @@ footer {
 }
 
 nav {
-  padding: ($normal-space / 2) $null;
+  padding: ($normal-space / 2);
 }
 
 // Gestion d'un bloc qui contient du contenu
 .wrapper {
-  display: flex;
+  @extend %flex-center;
   flex-wrap: wrap;
   justify-content: space-between;
   .inner {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    margin-right: $normal-space;
+    flex-wrap: wrap; //    margin-right: $normal-space;
     .content {
       padding: $normal-space;
       @include shadow ($color-shadow);
@@ -103,25 +123,35 @@ nav {
 h1 {
   color: $base-color;
   font-family: $oswald;
-  font-size: 50px;
+  font-size: 30px;
   letter-spacing: 3px;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 50px;
+  @include breakpoint(tablet-landscape) {
+    font-size: 50px;
+  }
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 18px;
   font-weight: $bold;
   margin-bottom: 10px;
+  @include breakpoint(tablet-landscape) {
+    font-size: 25px;
+  }
 }
 
 h3 {
   font-family: $oswald;
-  font-size: 23px;
+  font-size: 18px;
   text-transform: uppercase;
   margin-bottom: $normal-space;
+  @include breakpoint(tablet-portrait) {
+    font-size: 23px;
+  }
 }
+
 
 p {
   font-size: 14px;
@@ -134,6 +164,12 @@ strong {
 
 a {
   text-decoration: none;
+  transition: color 0.3s ease;
+  color: $content-color-white;
+}
+
+a:hover {
+  color: $content-color-dark;
 }
 
 // IMAGE

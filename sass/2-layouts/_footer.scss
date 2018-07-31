@@ -1,11 +1,15 @@
 footer {
-  width: 54%;  
-  @include column (2, $large-space, none);
+  width: 100%;
+  padding: 0 $normal-space;
+  @include breakpoint(tablet-portrait) {
+    width: 54%;
+    @include column (2, $large-space, none);
+  }
   p {
     &:last-child {
       font-weight: $bold;
     }
-    a{
+    a {
       color: $content-color-white;
     }
   }

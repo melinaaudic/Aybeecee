@@ -31,6 +31,13 @@
   width: calc(#{$percent} - #{$pixel});
 }
 
+// CALC +
+@mixin calc-plus ($percent, $pixel) {
+  width: -webkit-calc(#{$percent} + #{$pixel});
+  width: -moz-calc(#{$percent} + #{$pixel});
+  width: calc(#{$percent} + #{$pixel});
+}
+
 // COLUMNS
 @mixin column ($nbr, $gap, $divide) {
   -webkit-column-count: $nbr;
@@ -68,7 +75,7 @@
   }
 }
 
-// Cercle
+// CERCLE
 @mixin circle($width, $color) {
   width: $width;
   height: $width;
@@ -77,7 +84,6 @@
   -moz-border-radius: $width/2;
   border-radius: $width/2;
 }
-
 
 // Fleche du market place
 @mixin arrow-market-place($top, $left, $rotate) {
@@ -89,4 +95,38 @@
   top: $top;
   left: $left;
   transform: rotate($rotate);
+}
+
+// RESPONSIVE
+@mixin breakpoint($point) {
+  @if $point==phone-small {
+    @media (max-width: 349px) {
+      @content ;
+    }
+  }
+  @if $point==phone {
+    @media (min-width: 350px) {
+      @content ;
+    }
+  }
+  @else if $point==tablet-portrait {
+    @media (min-width: 600px) {
+      @content ;
+    }
+  }
+  @else if $point==tablet-landscape {
+    @media (min-width: 900px) {
+      @content ;
+    }
+  }
+  @else if $point==desktop {
+    @media (min-width: 1200px) {
+      @content ;
+    }
+  }
+  @else if $point==big-desktop {
+    @media (min-width: 1800px) {
+      @content ;
+    }
+  }
 }

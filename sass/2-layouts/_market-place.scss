@@ -1,22 +1,32 @@
 .market-place-visuel {
   @extend %flex-center;
-  flex-direction: column;
   position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  @include breakpoint(tablet-landscape) {
+    flex-direction: column;
+  }
   .circle-03 {
     @extend %flex-center;
-    @include circle(890px, $content-color-light);
+    @include breakpoint(tablet-landscape) {
+      @include circle(890px, $content-color-light);
+    }
   }
   .circle-02 {
     @extend %flex-center;
-    @include circle(690px, $content-color-med);
+    @include breakpoint(tablet-landscape) {
+      @include circle(690px, $content-color-light);
+    }
   }
   .circle-01 {
-    @include circle(500px, $base-color);
-    @include shadow($color-shadow);
+    padding: 10px;
+    @include breakpoint(tablet-landscape) {
+      @include shadow($color-shadow);
+      @include circle(500px, $base-color);
+      padding: $large-space ($large-space * 2);
+    }
   }
-  .contain-principal {
-    padding: $large-space ($large-space * 2);
-  }
+  .contain-principal {}
   .contain-secondaire {
     @extend %flex-center;
     flex-direction: column;
@@ -28,28 +38,55 @@
       max-height: 100px;
     }
     &.pdv {
-      position: absolute;
-      top: 10px;
-      right: 170px;
       text-align: center;
+      @include breakpoint(desktop) {
+        position: absolute;
+        top: 10px;
+        right: 170px;
+      }
+      @include breakpoint(tablet-landscape) {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
       &:before {
-        @include arrow-market-place(240px, -50px, -50deg);
+        @include breakpoint(tablet-landscape) {
+          @include arrow-market-place(240px, -50px, -50deg);
+        }
       }
     }
     &.grp {
-      position: absolute;
-      bottom: 130px;
-      left: 60px;
+      @include breakpoint(desktop) {
+        position: absolute;
+        bottom: 130px;
+        left: 60px;
+      }
+      @include breakpoint(tablet-landscape) {
+        position: absolute;
+        bottom: 60px;
+        left: 0;
+      }
       &:before {
-        @include arrow-market-place(10px, 170px, 160deg);
+        @include breakpoint(tablet-landscape) {
+          @include arrow-market-place(10px, 170px, 160deg);
+        }
       }
     }
     &.fourn {
-      position: absolute;
-      bottom: 20px;
-      right: 170px;
+      @include breakpoint(desktop) {
+        position: absolute;
+        bottom: 20px;
+        right: 170px;
+      }
+      @include breakpoint(tablet-landscape) {
+        position: absolute;
+        bottom: 20px;
+        right: 0;
+      }
       &:before {
-        @include arrow-market-place(10px, -70px, 40deg);
+        @include breakpoint(tablet-landscape) {
+          @include arrow-market-place(10px, -70px, 40deg);
+        }
       }
     }
   }

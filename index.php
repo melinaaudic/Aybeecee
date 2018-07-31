@@ -11,36 +11,29 @@
 
 <body>
   <header class="background base-color" id="header">
-    <div class="logo" id="logo">
-      <a href="index.php"><img src="medias/Aybeecee-logo.png" alt="Aybeecee - Market Place for Retail Networks"></a>
-    </div>
-    <nav class="nav" id="nav">
-      <ul>
-        <li><a href="#qui-sommes-nous">Qui sommes-nous ?</a></li>
-        <li><a href="#market-place">Market Place</a></li>
-        <li><a href="#temoignages">Témoignages clients</a></li>
-        <li><a href="#que-fait-aybeecee">Que fait Aybeecee pour vous ?</a></li>
-        <li><a href="#aybeecee-pour-qui">Pour qui ?</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <header class="background base-color hide" id="header-scroll">
-    <nav class="nav" id="nav">
-      <ul>
-        <li><a href="index.php"><img src="medias/Aybeecee-logo.png" alt="Aybeecee - Market Place for Retail Networks"></a></li>
-        <li><a href="#qui-sommes-nous">Qui sommes-nous ?</a></li>
-        <li><a href="#market-place">Market Place</a></li>
-        <li><a href="#temoignages">Témoignages clients</a></li>
-        <li><a href="#que-fait-aybeecee">Que fait Aybeecee pour vous ?</a></li>
-        <li><a href="#aybeecee-pour-qui">Pour qui ?</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <nav role="navigation" class="nav">
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul id="menu" class="menu">
+          <li><a href="index.php"><img src="medias/Aybeecee-logo.png" alt="Aybeecee - Market Place for Retail Networks" id="logo"></a></li>
+          <li><a href="#qui-sommes-nous">Qui sommes-nous&nbsp;?</a></li>
+          <li><a href="#market-place">Market Place</a></li>
+          <li><a href="#temoignages">Témoignages clients</a></li>
+          <li><a href="#que-fait-aybeecee">Que fait Aybeecee pour vous&nbsp;?</a></li>
+          <li><a href="#aybeecee-pour-qui">Pour qui&nbsp;?</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
   <div class="background" id="scroll">
     <section id="qui-sommes-nous">
-      <h1>Qui sommes-nous ?</h1>
+      <h1>Qui sommes-nous&nbsp;?</h1>
       <h2>Le magasin des magasins</h2>
       <p>Aybeecee est une marque du Groupe Staci. Nous nous appuyons sur plus de 20 années d'expérience avec nos clients distributeurs pour créer la première marketplace privative dédiée aux réseaux de points de ventes.</p>
       <h2>Notre mission :</h2>
@@ -86,8 +79,6 @@
           <h2>Fournisseurs</h2>
         </div>
       </div>
-
-
     </section>
     <hr>
     <section id="temoignages">
@@ -164,7 +155,7 @@
   </div>
   <div class="background">
     <section id="que-fait-aybeecee">
-      <h1>Que fait Aybeecee pour vous</h1>
+      <h1>Que fait Aybeecee pour vous&nbsp;?</h1>
       <div class="wrapper">
         <div class="inner">
           <div class="content background base-color main">
@@ -307,7 +298,7 @@
   </div>
   <div class="background light-color">
     <section id="aybeecee-pour-qui">
-      <h1>Aybeecee pour qui ?</h1>
+      <h1>Aybeecee pour qui&nbsp;?</h1>
       <div class="wrapper">
         <div class="inner">
           <div class="content background image">
@@ -417,7 +408,7 @@
     <section id="contact">
       <h1>Contact</h1>
       <p>N’hésitez pas à nous contacter via le formulaire ou directement par téléphone ou mail !</p>
-      <form action="form.php" method="post" name="contact">
+      <form action="" method="post" name="contact">
         <input type="text" name="prenom" id="prenom" placeholder="Prénom*" required>
         <span class="hide field_missing" id="prenom_missing">Veuillez entrer votre prénom</span>
         <input type="text" name="nom" id="nom" placeholder="Nom*" required>

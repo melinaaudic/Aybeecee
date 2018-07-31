@@ -3,11 +3,15 @@
   flex-direction: column;
   text-align: center;
   p {
-    width: 75%;
-    font-size: 23px;
     margin-bottom: 35px;
     &:last-child {
       margin-bottom: 0;
+    }
+    @include breakpoint(tablet-landscape) {
+      font-size: 23px;
+    }
+    @include breakpoint(desktop) {
+      width: 75%;
     }
   }
 }
