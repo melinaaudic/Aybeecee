@@ -10,11 +10,11 @@
 </head>
 
 <body>
-  <header class="background base-color">
-    <div class="logo">
+  <header class="background base-color" id="header">
+    <div class="logo" id="logo">
       <img src="medias/Aybeecee-logo.png" alt="Aybeecee - Market Place for Retail Networks">
     </div>
-    <nav class="nav">
+    <nav class="nav" id="nav">
       <ul>
         <li><a href="#qui-sommes-nous">Qui sommes-nous ?</a></li>
         <li><a href="#market-place">Market Place</a></li>
@@ -25,7 +25,20 @@
       </ul>
     </nav>
   </header>
-  <div class="background">
+  <header class="background base-color hide" id="header-scroll">
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="index.php"><img src="medias/Aybeecee-logo.png" alt="Aybeecee - Market Place for Retail Networks"></a></li>
+        <li><a href="#qui-sommes-nous">Qui sommes-nous ?</a></li>
+        <li><a href="#market-place">Market Place</a></li>
+        <li><a href="#temoignages">Témoignages clients</a></li>
+        <li><a href="#que-fait-aybeecee">Que fait Aybeecee pour vous ?</a></li>
+        <li><a href="#aybeecee-pour-qui">Pour qui ?</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="background" id="scroll">
     <section id="qui-sommes-nous">
       <h1>Qui sommes-nous ?</h1>
       <h2>Le magasin des magasins</h2>

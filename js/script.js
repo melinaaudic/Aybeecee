@@ -1,3 +1,24 @@
+// Scroll du header
+var header = document.getElementById("header");
+var headerScroll = document.getElementById("header-scroll");
+var divAfter = document.getElementById("scroll");
+
+function menuScroll() {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    header.classList.add("hide");
+    headerScroll.classList.remove("hide");
+    divAfter.style.paddingTop = "85px";
+
+  } else {
+    header.classList.remove("hide");
+    headerScroll.classList.add("hide");
+    divAfter.style.paddingTop = "430px";
+  }
+}
+
+window.addEventListener("scroll", menuScroll);
+
+
 // Contact form
 var form = document.querySelector("form");
 var regEx = /^[^\W][a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)*\@[a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)*\.[a-zA-Z]{2,4}$/;
