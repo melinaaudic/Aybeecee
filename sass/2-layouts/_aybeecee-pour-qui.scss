@@ -43,15 +43,18 @@
         box-shadow: none;
         @include column(4, $large-space, 3px dotted $base-color);
         .intro {
-          font-size: 20px;
+          font-size: 18px;
           span {
             color: $base-color;
             text-transform: uppercase;
             font-weight: $bold;
           }
         }
-        p {
-          @include break
+        .text {
+          @include break;
+          p {
+            margin-bottom: $normal-space /2;
+          }
         }
       }
 

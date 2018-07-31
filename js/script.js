@@ -7,7 +7,7 @@ function menuScroll() {
   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
     header.classList.add("hide");
     headerScroll.classList.remove("hide");
-    divAfter.style.paddingTop = "85px";
+    divAfter.style.paddingTop = "100px";
 
   } else {
     header.classList.remove("hide");
@@ -17,7 +17,6 @@ function menuScroll() {
 }
 
 window.addEventListener("scroll", menuScroll);
-
 
 // Contact form
 var form = document.querySelector("form");

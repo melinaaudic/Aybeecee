@@ -12,7 +12,7 @@
 <body>
   <header class="background base-color" id="header">
     <div class="logo" id="logo">
-      <img src="medias/Aybeecee-logo.png" alt="Aybeecee - Market Place for Retail Networks">
+      <a href="index.php"><img src="medias/Aybeecee-logo.png" alt="Aybeecee - Market Place for Retail Networks"></a>
     </div>
     <nav class="nav" id="nav">
       <ul>
@@ -358,8 +358,14 @@
         <div class="inner">
           <div class="content">
             <p class="intro"><span>Gérez tous les achats</span> de votre réseau de vente de façon simple, efficace et économique</p>
-            <p><strong>Une gestion centralisée de tous les achats</strong> de vos points de vente.<br><br><strong>L’implémentation maîtrisée de vos choix de fournisseurs</strong> et des produits et services associés.<br><br><strong>Un système prédictif et d’auto-apprentissage</strong> pour améliorer la qualité et la performance.<br><br><strong>Une facturation unique et un financement possible</strong> pour tous vos achats.<br><br><strong>Une logistique optimisée</strong> avec des informations en temps réel.<br><br>
-              <strong>Favoriser l’accompagnement de votre réseau</strong> de distribution pour une productivité maximale</p>
+            <div class="text">
+              <p><strong>Une gestion centralisée de tous les achats</strong> de vos points de vente.</p>
+              <p><strong>L’implémentation maîtrisée de vos choix de fournisseurs</strong> et des produits et services associés.</p>
+              <p><strong>Un système prédictif et d’auto-apprentissage</strong> pour améliorer la qualité et la performance.</p>
+              <p><strong>Une facturation unique et un financement possible</strong> pour tous vos achats.</p>
+              <p><strong>Une logistique optimisée</strong> avec des informations en temps réel.</p>
+              <p><strong>Favoriser l’accompagnement de votre réseau</strong> de distribution pour une productivité maximale</p>
+            </div>
           </div>
         </div>
       </div>
@@ -373,7 +379,14 @@
         <div class="inner">
           <div class="content">
             <p class="intro"><span>Oprimisez vos achats</span> de produits et services pour une meilleure productivité de votre point de vente</p>
-            <p><strong>Une seule plateforme de commande</strong> pour tous les fourni sseurs de produits et services<br><br><strong>Une seule facture</strong>, un seul reporting, un seul suivi des achats et consommations <br><br>Une parfaite visibilité des livraisons pour <strong>optimiser le temps de réception</strong><br><br>L’accès à <strong>un catalogue de milliers d’articles</strong> liés à votre métier<br><br>L’accès à <strong>des services professionnels référencés</strong> avec un haut niveau d’engagement<br><br>Accès 24h/24h à la plateforme <strong>sur tous vos supports</strong> (fixes et mobiles)</p>
+            <div class="text">
+              <p><strong>Une seule plateforme de commande</strong> pour tous les fourni sseurs de produits et services.</p>
+              <p><strong>Une seule facture</strong>, un seul reporting, un seul suivi des achats et consommations.</p>
+              <p>Une parfaite visibilité des livraisons pour <strong>optimiser le temps de réception</strong>.</p>
+              <p>L’accès à <strong>un catalogue de milliers d’articles</strong> liés à votre métier.</p>
+              <p>L’accès à <strong>des services professionnels référencés</strong> avec un haut niveau d’engagement.</p>
+              <p>Accès 24h/24h à la plateforme <strong>sur tous vos supports</strong> (fixes et mobiles).</p>
+            </div>
           </div>
         </div>
       </div>
@@ -387,8 +400,14 @@
         <div class="inner">
           <div class="content">
             <p class="intro"><span>Proposez votre catalogue</span> de produits et de prestations de services à des réseaux de distribution structurés et performants</p>
-            <p>Proposer votre offre à <strong>+500 clients, +350 000 utilisateurs</strong><br><br><strong>Une sélection ciblée</strong> et restreinte de fournisseurs partenaires<br><br><strong>Un engagement sur des volume mutualisés</strong> des clients<br><br><strong>Des outils puissants pour le pilotage</strong> de vos performances<br><br>Une livraison garantie <strong>de vos produits</strong><br><br>
-              <strong>Accès 24h/24h à la plateforme</strong> sur tous vos supports (fixes et mobiles)</p>
+            <div class="text">
+              <p>Proposer votre offre à <strong>+500 clients, +350 000 utilisateurs.</strong></p>
+              <p><strong>Une sélection ciblée</strong> et restreinte de fournisseurs partenaires.</p>
+              <p><strong>Un engagement sur des volume mutualisés</strong> des clients.</p>
+              <p><strong>Des outils puissants pour le pilotage</strong> de vos performances.</p>
+              <p>Une livraison garantie <strong>de vos produits</strong>.</p>
+              <p><strong>Accès 24h/24h à la plateforme</strong> sur tous vos supports (fixes et mobiles)</p>
+            </div>
           </div>
         </div>
       </div>

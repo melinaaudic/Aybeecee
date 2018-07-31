@@ -77,3 +77,16 @@
   -moz-border-radius: $width/2;
   border-radius: $width/2;
 }
+
+
+// Fleche du market place
+@mixin arrow-market-place($top, $left, $rotate) {
+  content: "";
+  background: url(../medias/icon/arrow-2.svg) no-repeat;
+  position: absolute;
+  width: 154px;
+  height: 24px;
+  top: $top;
+  left: $left;
+  transform: rotate($rotate);
+}

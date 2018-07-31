@@ -4,13 +4,11 @@
     .inner {
       @include calc(100% / 6, $normal-space);
       height: 100%;
-      font-size: 13px;
       &:last-child {
         margin-right: $null;
       }
       .content {
         p {
-          font-size: 13px;
           font-style: italic;
           margin-bottom: $normal-space;
         }
@@ -33,7 +31,8 @@
     .man {
       width: 100%;
       &:after {
-        @extend %content;
+        content: "";
+        position: relative;
         background-image: url(../medias/icon/temoignage-homme.svg);
         background-repeat: no-repeat;
         display: block;

@@ -1,8 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300,300i,500,500i);
 @import url("https://fonts.googleapis.com/css?family=Oswald");
-#temoignages .wrapper .man:after {
-  content: "";
-  position: relative; }
+#qui-sommes-nous, .market-place-visuel, .market-place-visuel .circle-03, .market-place-visuel .circle-02, .market-place-visuel .contain-secondaire, #contact form {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 /* BASE STYLES */
 body {
@@ -12,16 +13,8 @@ body {
   margin: 0 auto;
   color: #4a4a4a;
   line-height: normal; }
-
-.background .logo,
-.background #qui-sommes-nous,
-.background #market-place,
-.background hr,
-.background #que-fait-aybeecee,
-.background #aybeecee-pour-qui,
-.background #contact,
-.background footer {
-  padding: 50px 0; }
+  body * {
+    box-sizing: border-box; }
 
 .background.base-color {
   background-color: #ff3d46;
@@ -40,23 +33,39 @@ body {
 .background.white-color {
   background-color: #ffffff;
   color: #4a4a4a; }
-.background .logo,
-.background nav,
-.background #qui-sommes-nous,
-.background #market-place,
-.background hr,
-.background #temoignages,
-.background #que-fait-aybeecee,
-.background #aybeecee-pour-qui,
-.background .wrapper {
+
+.logo,
+nav,
+#qui-sommes-nous,
+#market-place,
+hr,
+#temoignages,
+#que-fait-aybeecee,
+#aybeecee-pour-qui,
+.wrapper {
   width: 1200px;
   margin: 0 auto; }
-.background #contact,
-.background footer {
+
+#contact,
+footer {
   width: 750px;
   margin: 0 auto; }
-.background #temoignages {
+
+.logo,
+#qui-sommes-nous,
+#market-place,
+hr,
+#que-fait-aybeecee,
+#aybeecee-pour-qui,
+#contact,
+footer {
+  padding: 50px 0; }
+
+#temoignages {
   padding-top: 50px; }
+
+nav {
+  padding: 10px 0; }
 
 .wrapper {
   display: flex;
@@ -66,7 +75,6 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    box-sizing: border-box;
     margin-right: 20px; }
     .wrapper .inner .content {
       padding: 20px;
@@ -86,8 +94,9 @@ h1 {
   margin-bottom: 50px; }
 
 h2 {
+  font-size: 25px;
   font-weight: 500;
-  font-size: 25px; }
+  margin-bottom: 10px; }
 
 h3 {
   font-family: "Oswald", sans-serif;
@@ -96,7 +105,7 @@ h3 {
   margin-bottom: 20px; }
 
 p {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 300; }
 
 strong {
@@ -107,6 +116,19 @@ a {
 
 img {
   width: 100%; }
+
+ul li {
+  list-style-image: none;
+  padding-left: 20px;
+  text-indent: -20px; }
+  ul li:before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    height: 11px;
+    width: 15px;
+    margin-right: 5px;
+    background: url(../medias/icon/arrow.svg) no-repeat; }
 
 hr {
   border: 0; }
@@ -122,19 +144,6 @@ hr {
 .hide {
   display: none !important; }
 
-ul li {
-  list-style-image: none;
-  padding-left: 20px;
-  text-indent: -20px; }
-  ul li:before {
-    content: '';
-    display: inline-block;
-    position: relative;
-    height: 11px;
-    width: 15px;
-    margin-right: 5px;
-    background: url(../medias/icon/arrow.svg) no-repeat; }
-
 /* LAYOUTS */
 #header,
 #header-scroll {
@@ -147,55 +156,41 @@ ul li {
   .logo img {
     max-width: 690px; }
 
-.nav {
-  padding: 10px 0; }
-  .nav ul {
-    display: flex;
-    justify-content: space-between;
-    font-family: "Oswald", sans-serif;
-    font-size: 23px;
-    letter-spacing: 1px;
-    text-transform: uppercase; }
-    .nav ul li {
-      padding: 0;
-      text-indent: 0; }
-      .nav ul li:before {
-        display: none; }
-    .nav ul a {
-      color: #ffffff; }
-      .nav ul a:hover {
-        color: #4a4a4a; }
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Oswald", sans-serif;
+  font-size: 23px;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+  .nav ul li {
+    padding: 0;
+    text-indent: 0; }
+    .nav ul li:before {
+      display: none; }
+  .nav ul a {
+    color: #ffffff; }
+    .nav ul a:hover {
+      color: #4a4a4a; }
 
 #header-scroll ul {
   font-size: 19px;
   align-items: center; }
-  #header-scroll ul li {
-    margin-right: 10px; }
-    #header-scroll ul li:last-child {
-      margin-right: 0; }
-    #header-scroll ul li img {
-      max-width: 150px; }
+  #header-scroll ul li img {
+    max-width: 150px; }
 
 #scroll {
   padding-top: 430px; }
 
 #qui-sommes-nous {
+  flex-direction: column;
   text-align: center; }
-  #qui-sommes-nous h2 {
-    margin-bottom: 10px; }
   #qui-sommes-nous p {
     width: 75%;
-    margin: 0 auto;
     font-size: 23px;
-    text-align: center;
     margin-bottom: 35px; }
     #qui-sommes-nous p:last-child {
       margin-bottom: 0; }
-
-.market-place-visuel, .market-place-visuel .circle-03, .market-place-visuel .circle-02, .market-place-visuel .contain-secondaire {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
 
 .market-place-visuel {
   flex-direction: column;
@@ -235,16 +230,9 @@ ul li {
     -moz-border-radius: 130px;
     border-radius: 130px;
     padding: 50px;
-    box-sizing: border-box;
     -webkit-box-shadow: 4px 4px 10px -2px rgba(74, 74, 74, 0.25);
     -moz-box-shadow: 4px 4px 10px -2px rgba(74, 74, 74, 0.25);
     box-shadow: 4px 4px 10px -2px rgba(74, 74, 74, 0.25); }
-    .market-place-visuel .contain-secondaire:before {
-      content: '';
-      position: absolute;
-      width: 154px;
-      height: 24px;
-      background: url(../medias/icon/arrow-2.svg) no-repeat; }
     .market-place-visuel .contain-secondaire img {
       margin-bottom: 20px;
       max-height: 100px; }
@@ -254,25 +242,40 @@ ul li {
       right: 170px;
       text-align: center; }
       .market-place-visuel .contain-secondaire.pdv:before {
-        transform: rotate(-50deg);
-        bottom: 0px;
-        left: -50px; }
+        content: "";
+        background: url(../medias/icon/arrow-2.svg) no-repeat;
+        position: absolute;
+        width: 154px;
+        height: 24px;
+        top: 240px;
+        left: -50px;
+        transform: rotate(-50deg); }
     .market-place-visuel .contain-secondaire.grp {
       position: absolute;
       bottom: 130px;
       left: 60px; }
       .market-place-visuel .contain-secondaire.grp:before {
-        transform: rotate(160deg);
-        top: 40px;
-        right: -90px; }
+        content: "";
+        background: url(../medias/icon/arrow-2.svg) no-repeat;
+        position: absolute;
+        width: 154px;
+        height: 24px;
+        top: 10px;
+        left: 170px;
+        transform: rotate(160deg); }
     .market-place-visuel .contain-secondaire.fourn {
       position: absolute;
       bottom: 20px;
       right: 170px; }
       .market-place-visuel .contain-secondaire.fourn:before {
-        transform: rotate(40deg);
+        content: "";
+        background: url(../medias/icon/arrow-2.svg) no-repeat;
+        position: absolute;
+        width: 154px;
+        height: 24px;
         top: 10px;
-        left: -70px; }
+        left: -70px;
+        transform: rotate(40deg); }
   .market-place-visuel h2 {
     text-transform: uppercase;
     font-weight: 300;
@@ -285,12 +288,10 @@ ul li {
     width: -webkit-calc(16.66667% - 20px);
     width: -moz-calc(16.66667% - 20px);
     width: calc(16.66667% - 20px);
-    height: 100%;
-    font-size: 13px; }
+    height: 100%; }
     #temoignages .wrapper .inner:last-child {
       margin-right: 0; }
     #temoignages .wrapper .inner .content p {
-      font-size: 13px;
       font-style: italic;
       margin-bottom: 20px; }
     #temoignages .wrapper .inner .content .entreprise {
@@ -322,6 +323,8 @@ ul li {
   #temoignages .wrapper .man {
     width: 100%; }
     #temoignages .wrapper .man:after {
+      content: "";
+      position: relative;
       background-image: url(../medias/icon/temoignage-homme.svg);
       background-repeat: no-repeat;
       display: block;
@@ -334,6 +337,8 @@ ul li {
   width: -webkit-calc(25% - 20px);
   width: -moz-calc(25% - 20px);
   width: calc(25% - 20px); }
+  #que-fait-aybeecee .wrapper .inner:nth-child(4n + 4) {
+    margin-right: 0; }
   #que-fait-aybeecee .wrapper .inner:hover .main {
     opacity: 0; }
   #que-fait-aybeecee .wrapper .inner:hover .second {
@@ -352,8 +357,8 @@ ul li {
   #que-fait-aybeecee .wrapper .inner .second {
     text-align: left;
     position: absolute;
-    width: 240px;
-    min-height: 240px;
+    width: 280px;
+    height: 280px;
     opacity: 0; }
   #que-fait-aybeecee .wrapper .inner .intitule {
     text-transform: uppercase;
@@ -361,8 +366,6 @@ ul li {
   #que-fait-aybeecee .wrapper .inner .baseline {
     text-align: left;
     font-size: 40px; }
-  #que-fait-aybeecee .wrapper .inner:nth-child(4n + 4) {
-    margin-right: 0; }
 
 #aybeecee-pour-qui .wrapper .inner {
   width: -webkit-calc(16.66667% - 20px);
@@ -418,68 +421,66 @@ ul li {
   -moz-column-rule: 3px dotted #ff3d46;
   column-rule: 3px dotted #ff3d46; }
   .rubrique .wrapper .inner .content .intro {
-    font-size: 20px; }
+    font-size: 18px; }
     .rubrique .wrapper .inner .content .intro span {
       color: #ff3d46;
       text-transform: uppercase;
       font-weight: 500; }
-  .rubrique .wrapper .inner .content p {
+  .rubrique .wrapper .inner .content .text {
     break-inside: avoid-column;
     page-break-inside: avoid;
     -webkit-column-break-inside: avoid; }
+    .rubrique .wrapper .inner .content .text p {
+      margin-bottom: 10px; }
 
-#contact {
-  text-align: center; }
-  #contact p {
-    margin-bottom: 20px; }
-  #contact form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    #contact form input,
-    #contact form textarea {
-      width: 100%;
-      margin: 0 auto;
-      margin-bottom: 10px;
-      margin-top: 10px;
-      background: none;
-      border: none;
-      border-bottom: 2px dotted #ffffff;
-      color: #ffffff;
-      font-style: italic;
-      font-family: "Montserrat", sans-serif;
-      font-size: 15px;
-      padding: 2px 4px; }
-      #contact form input[type="submit"],
-      #contact form textarea[type="submit"] {
-        width: 100px;
-        height: 100px;
-        background: #4a4a4a;
-        -webkit-border-radius: 50px;
-        -moz-border-radius: 50px;
-        border-radius: 50px;
-        border: none;
-        text-transform: uppercase;
-        font-style: normal;
-        cursor: pointer; }
-      #contact form input:active,
-      #contact form textarea:active {
-        outline: none;
-        box-shadow: none; }
-    #contact form .field_missing {
-      margin-bottom: 10px;
-      text-align: left;
-      font-size: 13px;
-      font-style: italic; }
-  #contact ::-webkit-input-placeholder {
-    color: #ffffff; }
-  #contact ::-moz-placeholder {
-    color: #ffffff; }
-  #contact :-ms-input-placeholder {
-    color: #ffffff; }
-  #contact ::placeholder {
+#contact p {
+  text-align: center;
+  margin-bottom: 20px; }
+#contact form {
+  flex-direction: column; }
+  #contact form input,
+  #contact form textarea {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background: none;
+    border: none;
+    border-bottom: 2px dotted #ffffff;
     color: #ffffff;
-    opacity: 1; }
+    font-style: italic;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    padding: 2px 4px; }
+    #contact form input[type="submit"],
+    #contact form textarea[type="submit"] {
+      width: 100px;
+      height: 100px;
+      background: #4a4a4a;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      border-radius: 50px;
+      border: none;
+      text-transform: uppercase;
+      font-style: normal;
+      cursor: pointer; }
+    #contact form input:active,
+    #contact form textarea:active {
+      outline: none;
+      box-shadow: none; }
+  #contact form .field_missing {
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-style: italic; }
+#contact ::-webkit-input-placeholder {
+  color: #ffffff; }
+#contact ::-moz-placeholder {
+  color: #ffffff; }
+#contact :-ms-input-placeholder {
+  color: #ffffff; }
+#contact ::placeholder {
+  color: #ffffff;
+  opacity: 1; }
 
 footer {
   width: 54%;

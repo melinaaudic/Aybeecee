@@ -1,18 +1,12 @@
-#qui-sommes-nous{
+#qui-sommes-nous {
+  @extend %flex-center;
+  flex-direction: column;
   text-align: center;
-  h1{
-    
-  }
-  h2{
-    margin-bottom: 10px;
-  }
-  p{
+  p {
     width: 75%;
-    margin: 0 auto;
     font-size: 23px;
-    text-align: center;
     margin-bottom: 35px;
-    &:last-child{
+    &:last-child {
       margin-bottom: 0;
     }
   }

@@ -1,12 +1,11 @@
 #contact {
-  text-align: center;
   p {
+    text-align: center;
     margin-bottom: $normal-space;
   }
   form {
-    display: flex;
+    @extend %flex-center;
     flex-direction: column;
-    justify-content: center;
     input,
     textarea {
       width: 100%;
@@ -35,7 +34,6 @@
     }
     .field_missing {
       margin-bottom: $normal-space /2;
-      text-align: left;
       font-size: 13px;
       font-style: italic;
     }

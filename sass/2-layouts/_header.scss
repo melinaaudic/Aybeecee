@@ -13,7 +13,6 @@
 }
 
 .nav {
-  padding: 10px 0;
   ul {
     display: flex;
     justify-content: space-between;
@@ -22,7 +21,7 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     li {
-      padding: 0;
+      padding: $null;
       text-indent: 0;
       &:before {
         display: none;
@@ -37,16 +36,11 @@
   }
 }
 
-
 #header-scroll {
   ul {
     font-size: 19px;
     align-items: center;
     li {
-      margin-right: $normal-space / 2;
-      &:last-child {
-        margin-right: 0;
-      }
       img {
         max-width: 150px;
       }

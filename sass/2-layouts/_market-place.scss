@@ -1,19 +1,13 @@
-%unit {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .market-place-visuel {
-  @extend %unit;
+  @extend %flex-center;
   flex-direction: column;
   position: relative;
   .circle-03 {
-    @extend %unit;
+    @extend %flex-center;
     @include circle(890px, $content-color-light);
   }
   .circle-02 {
-    @extend %unit;
+    @extend %flex-center;
     @include circle(690px, $content-color-med);
   }
   .circle-01 {
@@ -24,19 +18,11 @@
     padding: $large-space ($large-space * 2);
   }
   .contain-secondaire {
-    @extend %unit;
+    @extend %flex-center;
     flex-direction: column;
     @include circle(260px, $content-color-dark);
     padding: $large-space;
-    box-sizing: border-box;
     @include shadow($color-shadow);
-    &:before {
-      content: '';
-      position: absolute;
-      width: 154px;
-      height: 24px;
-      background: url(../medias/icon/arrow-2.svg) no-repeat;
-    }
     img {
       margin-bottom: $normal-space;
       max-height: 100px;
@@ -47,9 +33,7 @@
       right: 170px;
       text-align: center;
       &:before {
-        transform: rotate(-50deg);
-        bottom: 0px;
-        left: -50px;
+        @include arrow-market-place(240px, -50px, -50deg);
       }
     }
     &.grp {
@@ -57,9 +41,7 @@
       bottom: 130px;
       left: 60px;
       &:before {
-        transform: rotate(160deg);
-        top: 40px;
-        right: -90px;
+        @include arrow-market-place(10px, 170px, 160deg);
       }
     }
     &.fourn {
@@ -67,9 +49,7 @@
       bottom: 20px;
       right: 170px;
       &:before {
-        transform: rotate(40deg);
-        top: 10px;
-        left: -70px;
+        @include arrow-market-place(10px, -70px, 40deg);
       }
     }
   }

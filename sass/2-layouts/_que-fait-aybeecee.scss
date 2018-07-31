@@ -2,6 +2,10 @@
   .wrapper {
     .inner {
       @include calc(25%, $normal-space);
+      &:nth-child(4n + 4) {
+        margin-right: $null;
+      }
+      
       &:hover .main {
         opacity: 0;
       }
@@ -24,11 +28,10 @@
       .second {
         text-align: left;
         position: absolute;
-        width: 240px;
-        min-height: 240px;
+        width: 280px;
+        height: 280px;
         opacity: 0;
       }
-
       .intitule {
         text-transform: uppercase;
         font-weight: $bold;
@@ -36,9 +39,6 @@
       .baseline {
         text-align: left;
         font-size: 40px;
-      }
-      &:nth-child(4n + 4) {
-        margin-right: $null;
       }
     }
   }
